@@ -32,7 +32,6 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 
 ### Eligibility of policies configuration
 
-| -------------------------- | ----------------- | ----------------- | ----------------- |
 | Browsers / Policy methods  | ADMX (gpedit.msc) | Policies Registry | JSON Distribution |
 | -------------------------- | ----------------- | ----------------- | ----------------- |
 | **Chromium based**         |                   |                   |                   |
@@ -48,7 +47,6 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | Librewolf                  | :x:               | :interrobang:     | :o:               |
 | **Gecko-based** (Goanna)   |                   |                   |                   |
 | Basilisk / Pale Moon       | :interrobang:     | :interrobang:     | :interrobang:     |
-| -------------------------- | ----------------- | ----------------- | ----------------- |
 
 \* e.g. Kinza, Iridium, Slimjet, etc (Electron apps, RPGMaker MV~MZ and any newer also affected!)
 
