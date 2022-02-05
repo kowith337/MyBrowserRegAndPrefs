@@ -1,0 +1,284 @@
+{
+  "policies": {
+    "AllowedDomainsForApps": "",
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "SearchBar": "separate",
+    "SSLVersionMin": "tls1.2",
+    "Bookmarks": [
+      {}
+    ],
+    "Certificates": {
+      "ImportEnterpriseRoots": false
+    },
+    "Cookies": {
+      "AcceptThirdParty": "never",
+      "Allow": [],
+      "AllowSession": [],
+      "Block": [],
+      "Default": true,
+      "ExpireAtSessionEnd": true,
+      "Locked": false,
+      "RejectTracker": true
+    },
+    "DisabledCiphers": {},
+    "DisableSecurityBypass": {
+      "InvalidCertificate": false,
+      "SafeBrowsing": false
+    },
+    "DNSOverHTTPS": {
+      "ProviderURL": "",
+      "ExcludedDomains": [],
+      "Enabled": false,
+      "Locked": true
+    },
+    "EnableTrackingProtection": {
+      "Exceptions": [],
+      "Cryptomining": false,
+      "Fingerprinting": false,
+      "Locked": false,
+      "Value": false
+    },
+    "EncryptedMediaExtensions": {
+      "Enabled": false,
+      "Locked": true
+    },
+    "Extensions": {
+      "Uninstall": [
+        "amazondotcom@search.mozilla.org",
+        "amazondotcom@search.waterfox.net",
+        "bing@search.mozilla.org",
+        "bing@search.waterfox.net",
+        "ebay@search.mozilla.org",
+        "ebay@search.waterfox.net",
+        "formautofill@mozilla.org",
+        "ecosia@search.mozilla.org",
+        "ecosia@search.waterfox.net",
+        "google@search.mozilla.org",
+        "google@search.waterfox.net",
+        "proxy-failover@mozilla.com",
+        "twitter@search.mozilla.org",
+        "twitter@search.waterfox.net",
+        "webcompat@mozilla.org",
+        "webcompat-reporter@mozilla.org",
+        "wikipedia@search.mozilla.org",
+        "wikipedia@search.waterfox.net",
+        "yahoo@search.mozilla.org",
+        "yahoo@search.waterfox.net"
+      ]
+    },
+    "ExtensionSettings": {},
+    "FirefoxHome": {
+      "Highlights": false,
+      "Locked": false,
+      "Pocket": false,
+      "Search": false,
+      "Snippets": false,
+      "TopSites": false
+    },
+    "FlashPlugin": {
+      "Default": false,
+      "Locked": true
+    },
+    "Handlers": {},
+    "Homepage": {
+      "StartPage": "none",
+      "URL": "",
+      "Additional": [],
+      "Locked": false
+    },
+    "IcecatHome": {
+      "Highlights": false,
+      "Locked": false,
+      "Pocket": false,
+      "Search": false,
+      "Snippets": false,
+      "TopSites": false
+    },
+    "InstallAddonsPermission": {
+      "Allow": [],
+      "Default": false
+    },
+    "LocalFileLinks": [],
+    "ManagedBookmarks": [],
+    "PDFjs": {
+      "Enabled": false,
+      "EnablePermissions": false
+    },
+    "Permissions": {
+      "Autoplay": {
+        "Default": "block-audio-video",
+        "Allow": [],
+        "Block": [],
+        "Locked": false
+      },
+      "Camera": {
+        "Allow": [],
+        "Block": [],
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "Location": {
+        "Allow": [],
+        "Block": [],
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "Microphone": {
+        "Allow": [],
+        "Block": [],
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "Notifications": {
+        "Allow": [],
+        "Block": [],
+        "BlockNewRequests": true,
+        "Locked": false
+      }
+    },
+    "PictureInPicture": {
+      "Enabled": false,
+      "Locked": false
+    },
+    "PopupBlocking": {
+      "Allow": [],
+      "Default": true,
+      "Locked": false
+    },
+    "Preferences": {
+      "accessibility.force_disabled": {
+        "Value": 1,
+        "Status": "default"
+      },
+      "browser.tabs.warnOnClose": {
+        "Status": "locked",
+        "Value": false
+      }
+    },
+    "Proxy": {
+      "SOCKSVersion": 5,
+      "AutoConfigURL": "",
+      "FTPProxy": "",
+      "HTTPProxy": "203.144.144.168:8080",
+      "Mode": "system",
+      "Passthrough": "<local>",
+      "SOCKSProxy": "127.0.0.1:9050",
+      "SSLProxy": "203.144.144.169:8080",
+      "AutoLogin": false,
+      "Locked": false,
+      "UseHTTPProxyForAllProtocols": false,
+      "UseProxyForDNS": true
+    },
+    "RequestedLocales": [
+      "en-US",
+      "en"
+    ],
+    "SanitizeOnShutdown": {
+      "Cache": true,
+      "FormData": true,
+      "Sessions": true,
+      "SiteSettings": true
+    },
+    "SearchEngines": {
+      "Default": "Random searX",
+      "Add": [
+        {
+          "Alias": "ddg",
+          "Description": "DuckDuckGo Start with custom prefs, no ads, no improving, no instant answers, no suggest, no notif guides, privacy embed, terminal theme, etc.",
+          "IconURL": "https://start.duckduckgo.com/favicon.ico",
+          "Method": "GET",
+          "Name": "DuckDuckGo Custom",
+          "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "",
+          "URLTemplate": "https://start.duckduckgo.com/?k1=-1&k5=1&kae=t&kaj=m&kak=-1&kao=-1&kap=-1&kaq=-1&kau=-1&kax=-1&kay=i&kd=-1&kg=g&kh=1&kk=-1&q={searchTerms}"
+        },
+        {
+          "Alias": "ivx",
+          "Description": "Invidious is an alternative front-end to YouTube",
+          "IconURL": "https://invidio.xamh.de/favicon-16x16.png?v=8b0ea1ff",
+          "Method": "GET",
+          "Name": "Invidious (XAMH)",
+          "SuggestURLTemplate": "",
+          "URLTemplate": "https://invidio.xamh.de/search?q={searchTerms}"
+        },
+        {
+          "Alias": "nt",
+          "Description": "Nitter, alternative Twitter frontend that focused on privacy and performance.",
+          "IconURL": "https://nitter.net/favicon-16x16.png",
+          "Method": "GET",
+          "Name": "nitter",
+          "PostData": "",
+          "SuggestURLTemplate": "",
+          "URLTemplate": "https://nitter.net/search?e-nativeretweets=on&q={searchTerms}"
+        },
+        {
+          "Alias": "rx",
+          "Description": "Random Searx Redirector",
+          "IconURL": "https://searx.neocities.org/favicon.ico",
+          "Method": "GET",
+          "Name": "Random searX",
+          "PostData": "",
+          "SuggestURLTemplate": "",
+          "URLTemplate": "https://searx.neocities.org/#q={searchTerms}"
+        }
+      ],
+      "Remove": [
+        "Amazon, Bing, eBay, Google, Twitter, Wikipedia"
+      ],
+      "PreventInstalls": false
+    },
+    "SupportMenu": {
+      "Title": "Unsupported",
+      "URL": "https://kowith337.github.io/unsupported.txt"
+    },
+    "UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "SkipOnboarding": true,
+      "UrlbarInterventions": false,
+      "WhatsNew": false
+    },
+    "AppAutoUpdate": false,
+    "BackgroundAppUpdate": false,
+    "BlockAboutSupport": false,
+    "CaptivePortal": false,
+    "DisableAppUpdate": false,
+    "DisableBuiltinPDFViewer": true,
+    "DisableDefaultBrowserAgent": true,
+    "DisableDeveloperTools": false,
+    "DisableFeedbackCommands": false,
+    "DisableFirefoxAccounts": true,
+    "DisableFirefoxScreenshots": false,
+    "DisableFirefoxStudies": true,
+    "DisableForgetButton": false,
+    "DisableFormHistory": true,
+    "DisableMasterPasswordCreation": false,
+    "DisablePasswordReveal": true,
+    "DisablePocket": true,
+    "DisablePrivateBrowsing": false,
+    "DisableProfileImport": false,
+    "DisableProfileRefresh": false,
+    "DisableSafeMode": false,
+    "DisableSetDesktopBackground": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": false,
+    "DisplayMenuBar": true,
+    "DontCheckDefaultBrowser": true,
+    "ExtensionUpdate": true,
+    "HardwareAcceleration": false,
+    "ManualAppUpdateOnly": true,
+    "NetworkPrediction": false,
+    "NewTabPage": false,
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "OfferToSaveLoginsDefault": false,
+    "PasswordManagerEnabled": false,
+    "PrimaryPassword": false,
+    "PromptForDownloadLocation": true,
+    "SearchSuggestEnabled": false,
+    "ShowHomeButton": true,
+    "WindowsSSO": false
+  }
+}

@@ -46,7 +46,7 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | IceCat / Iceweasel         | :x:               | :o:               | :o:               |
 | Librewolf                  | :x:               | :interrobang:     | :o:               |
 | **Gecko-based** (Goanna)   |                   |                   |                   |
-| Basilisk / Pale Moon       | :interrobang:     | :interrobang:     | :interrobang:     |
+| Basilisk / Pale Moon       | :x:               | :x:               | :x:               |
 
 \* e.g. Kinza, Iridium, Slimjet, etc (Electron apps, RPGMaker MV~MZ and any newer also affected!)
 
