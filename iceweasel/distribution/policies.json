@@ -199,7 +199,6 @@
           "IconURL": "https://invidio.xamh.de/favicon-16x16.png?v=8b0ea1ff",
           "Method": "GET",
           "Name": "Invidious (XAMH)",
-          "SuggestURLTemplate": "",
           "URLTemplate": "https://invidio.xamh.de/search?q={searchTerms}"
         },
         {
@@ -207,9 +206,7 @@
           "Description": "Nitter, alternative Twitter frontend that focused on privacy and performance.",
           "IconURL": "https://nitter.net/favicon-16x16.png",
           "Method": "GET",
-          "Name": "nitter",
-          "PostData": "",
-          "SuggestURLTemplate": "",
+          "Name": "Nitter (No NativeRTs)",
           "URLTemplate": "https://nitter.net/search?e-nativeretweets=on&q={searchTerms}"
         },
         {
@@ -218,8 +215,7 @@
           "IconURL": "https://searx.neocities.org/favicon.ico",
           "Method": "GET",
           "Name": "Random searX",
-          "PostData": "",
-          "SuggestURLTemplate": "",
+          "PostData": "q={searchTerms}",
           "URLTemplate": "https://searx.neocities.org/#q={searchTerms}"
         }
       ],
@@ -239,7 +235,7 @@
       "UrlbarInterventions": false,
       "WhatsNew": false
     },
-    "AppAutoUpdate": false,
+    "AppAutoUpdate": true,
     "BackgroundAppUpdate": false,
     "BlockAboutSupport": false,
     "CaptivePortal": false,
