@@ -67,7 +67,6 @@
         "yahoo@search.waterfox.net"
       ]
     },
-    "ExtensionSettings": {},
     "FirefoxHome": {
       "Highlights": false,
       "Locked": false,
@@ -94,10 +93,6 @@
       "Search": false,
       "Snippets": false,
       "TopSites": false
-    },
-    "InstallAddonsPermission": {
-      "Allow": [],
-      "Default": false
     },
     "LocalFileLinks": [],
     "ManagedBookmarks": [],
@@ -247,6 +242,8 @@
     "DisableFirefoxAccounts": true,
     "DisableFirefoxScreenshots": false,
     "DisableFirefoxStudies": true,
+    "DisableIceCatScreenshots": false,
+    "DisableIceCatxStudies": true,
     "DisableForgetButton": false,
     "DisableFormHistory": true,
     "DisableMasterPasswordCreation": false,
