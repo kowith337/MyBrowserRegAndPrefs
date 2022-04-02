@@ -4,24 +4,24 @@ Every browsers that I'm using, I never install them as system program files, eve
 
 ### Recommended tools
 - [henry++'s ChrLauncher](https://github.com/henrypp/chrlauncher) for download and update `Chromium`, also can select other forks to use, include between `sync` and `nosync`, also `clang`, `ungoogled`, or setup as launcher with custom arguments for any browsers.
-  > Pleases note that even you want to use the `sync` fork, don't expected it will works like `Google Chrome`, they've limited **Chromium** and other forks to access their **Sync APIs** (and anythings that rely to) until you join back to them! (Indeed, they need you to install **Google Chrome**!)
+  > Pleases note that even you want to use the `sync` fork, don't expected it will works like `Google Chrome`, they've limited **Chromium** and other forks to access their **Sync APIs** (and anythings that rely to) until you join back to them! (Indeed, they need you to install **Google Chrome** and keep using it!)
 - [UndertakerBen's](https://github.com/UndertakerBen) portable updater of common(ly bloated) browsers...
   - Brave
   - Chrome
-  - Edge (Chromium)
   - Firefox
+  - Edge (Chromium)
   - Opera (Chromium)
 
 ### Tips for setting up any browsers as semi-portable
-- If you download some branded browser or want to download common browsers manually without portable tools, make sure that you're downloading `standalone` setup file rather than `stub` installer because the `stub` installer size is only few megabytes or less than that, it doesn't contain all of necessary browser executable and files, only use for download browser program files remotely, then deploy into `%ProgramFiles%` or `%ProgramFiles(x86)%`.
+- If you download some branded browser or want to download common browsers manually without portable tools, make sure that you're downloading `standalone` setup file rather than `stub` because the installer size is only few megabytes or less than that, it doesn't contain all of necessary browser executable and files, only use for download browser program files remotely, then deploy into `%ProgramFiles%` or `%ProgramFiles(x86)%`.
 - After that, you can use [7-zip](https://7-zip.org) to exteact all files of its browser setup program, then you can execute them without installing, all of browser profile data will be save at default place of your `%appdata%` or `%localappdata%` or maybe both, unless you've placed some placeholder file to make its browser work as portable mode\*.
   > \* Only for Chrome and/or Chromium-based, as I know.
 - For Firefox and any of gecko/goanna/servo based or something, just extract everything inside `core` folder in setup file.
 - For any chromium-based browser, you need two steps of extraction.
-  1. Extract `chrome-bin.7z` or if it's branded forks, e.g. `Vivaldi`, `Whale`, etc. the name formatting should be `<brand>-bin.7z`
-  2. Then extract its `7z` file to anywhere that you want.
+  1. Extract `chrome.7z` or if it's branded forks, e.g. `Vivaldi`, `Whale`, etc. the name formatting should be `<brand>.7z`
+  2. Then move its `chrome-bin` or `<brand>-bin` files inside its folder to anywhere you want.
 
-### Recommendation note
+### Recommendation note for Firefox and any browsers that based on it
 Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 - `doh-rollout@mozilla.org.xpi`: If you wish to use in-browser **DNS-over-HTTPS**, but mind ahead that it will use `Cloudflare` servers at the beginning, however, deleting this will make you no longer use its feature until you bring this **XPI** back!
 - ~~`formautofill@mozilla.org.xpi`~~: Well, if you want to save registration form (and also credit cards), but in my opinion, I won't recommended to keep this!
@@ -44,11 +44,13 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | **Gecko-based** (Servo)    |                   |                   |                   |
 | Firefox                    | :o:               | :o:               | :o:               |
 | IceCat / Iceweasel         | :x:               | :o:               | :o:               |
-| Librewolf                  | :x:               | :interrobang:     | :o:               |
+| Librewolf                  | :x:               | :o:               | :o:               |
+| Thunderbird (Mail)         | :x:               | :o:               | :o:               |
 | **Gecko-based** (Goanna)   |                   |                   |                   |
 | Basilisk / Pale Moon       | :x:               | :x:               | :x:               |
+| Interlink (Mail)           | :x:               | :x:               | :x:               |
 
-\* e.g. Kinza, Iridium, Slimjet, etc (Electron apps, RPGMaker MV~MZ and any newer also affected!)
+\* e.g. Kinza, Iridium, Iron, Slimjet, etc (Electron apps, RPGMaker MV~MZ and any newer also affected!)
 
 Note: Only `Windows` platform, this won't include remote policy, e.g. Active Directory, Device Policy, etc.
 

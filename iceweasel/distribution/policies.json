@@ -230,7 +230,7 @@
       "UrlbarInterventions": false,
       "WhatsNew": false
     },
-    "AppAutoUpdate": true,
+    "AppAutoUpdate": false,
     "BackgroundAppUpdate": false,
     "BlockAboutSupport": false,
     "CaptivePortal": false,

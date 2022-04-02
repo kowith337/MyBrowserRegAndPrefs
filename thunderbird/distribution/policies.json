@@ -1,0 +1,51 @@
+{
+  "policies": {
+    "AppAutoUpdate": false,
+    "AppUpdateURL": "",
+    "BackgroundAppUpdate": false,
+    "CaptivePortal": false,
+    "Cookies": { "AcceptThirdParty": "never", "ExpireAtSessionEnd": true, "Locked": false },
+    "DisablePasswordReveal": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableTelemetry": true,
+    "DNSOverHTTPS": { "Enabled": false, "Locked": false },
+    "Extensions": {
+      "Uninstall": [
+        "amazondotcom@search.mozilla.org",
+        "amazondotcom@search.thunderbird.org",
+        "bing@search.mozilla.org",
+        "bing@search.thunderbird.org",
+        "ebay@search.mozilla.org",
+        "ebay@search.thunderbird.org",
+        "ecosia@search.mozilla.org",
+        "ecosia@search.thunderbird.org",
+        "formautofill@mozilla.org",
+        "formautofill@thunderbird.org",
+        "google@search.mozilla.org",
+        "google@search.thunderbird.org",
+        "proxy-failover@mozilla.com",
+        "proxy-failover@mozilla.org",
+        "proxy-failover@thunderbird.com",
+        "proxy-failover@thunderbird.org",
+        "twitter@search.mozilla.org",
+        "twitter@search.thunderbird.org",
+        "webcompat-reporter@mozilla.org",
+        "webcompat-reporter@thunderbird.org",
+        "webcompat@mozilla.org",
+        "webcompat@thunderbird.org",
+        "wikipedia@search.mozilla.org",
+        "wikipedia@search.thunderbird.org",
+        "yahoo@search.mozilla.org",
+        "yahoo@search.thunderbird.org"
+      ]
+    },
+    "HardwareAcceleration": false,
+    "ManualAppUpdateOnly": true,
+    "NetworkPrediction": false,
+    "OfferToSaveLogins": false,
+    "OfferToSaveLoginsDefault": false,
+    "PasswordManagerEnabled": false,
+    "PDFjs": { "Enabled": false, "EnablePermissions": false },
+    "PromptForDownloadLocation": true
+  }
+}
