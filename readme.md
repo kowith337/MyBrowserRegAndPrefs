@@ -13,7 +13,7 @@ Every browsers that I'm using, I never install them as system program files, eve
   - Opera (Chromium)
 
 ### Tips for setting up any browsers as semi-portable
-- If you download some branded browser or want to download common browsers manually without portable tools, make sure that you're downloading `standalone` setup file rather than `stub` because the installer size is only few megabytes or less than that, it doesn't contain all of necessary browser executable and files, only use for download browser program files remotely, then deploy into `%ProgramFiles%` or `%ProgramFiles(x86)%`.
+- If you download some branded browser or want to download common browsers manually without portable tools, make sure that you're downloading `standalone` setup file rather than `stub` because the installer size is only few megabytes or less than that and it doesn't contain all of necessary browser executable and files, only use for download browser program files remotely, then deploy into `%ProgramFiles%` or `%ProgramFiles(x86)%`.
 - After that, you can use [7-zip](https://7-zip.org) to exteact all files of its browser setup program, then you can execute them without installing, all of browser profile data will be save at default place of your `%appdata%` or `%localappdata%` or maybe both, unless you've placed some placeholder file to make its browser work as portable mode\*.
   > \* Only for Chrome and/or Chromium-based, as I know.
 - For Firefox and any of gecko/goanna/servo based or something, just extract everything inside `core` folder in setup file.
@@ -33,7 +33,7 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 ### Eligibility of policies configuration
 
 | Browsers / Policy methods  | ADMX (gpedit.msc) | Policies Registry | JSON Distribution |
-| -------------------------- | ----------------- | ----------------- | ----------------- |
+|----------------------------|-------------------|-------------------|-------------------|
 | **Chromium based**         |                   |                   |                   |
 | Chrome                     | :o:               | :o:               | :x:               |
 | Chromium / Rest of forks\* | :x:               | :o:               | :x:               |

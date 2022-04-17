@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale]
+
+[-HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]

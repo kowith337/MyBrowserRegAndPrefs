@@ -1,14 +1,15 @@
 {
   "policies": {
-    "AppAutoUpdate": false,
     "AppUpdateURL": "",
-    "BackgroundAppUpdate": false,
-    "CaptivePortal": false,
-    "Cookies": { "AcceptThirdParty": "never", "ExpireAtSessionEnd": true, "Locked": false },
-    "DisablePasswordReveal": true,
-    "DisableSystemAddonUpdate": true,
-    "DisableTelemetry": true,
-    "DNSOverHTTPS": { "Enabled": false, "Locked": false },
+    "Cookies": {
+      "AcceptThirdParty": "never",
+      "ExpireAtSessionEnd": true,
+      "Locked": false
+    },
+    "DNSOverHTTPS": {
+      "Enabled": false,
+      "Locked": false
+    },
     "Extensions": {
       "Uninstall": [
         "amazondotcom@search.mozilla.org",
@@ -39,13 +40,21 @@
         "yahoo@search.thunderbird.org"
       ]
     },
+    "PDFjs": {
+      "Enabled": false,
+      "EnablePermissions": false
+    },
+    "AppAutoUpdate": false,
+    "BackgroundAppUpdate": false,
+    "CaptivePortal": false,
+    "DisablePasswordReveal": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableTelemetry": true,
     "HardwareAcceleration": false,
     "ManualAppUpdateOnly": true,
     "NetworkPrediction": false,
-    "OfferToSaveLogins": false,
     "OfferToSaveLoginsDefault": false,
     "PasswordManagerEnabled": false,
-    "PDFjs": { "Enabled": false, "EnablePermissions": false },
     "PromptForDownloadLocation": true
   }
 }

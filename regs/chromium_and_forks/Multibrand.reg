@@ -1,0 +1,117 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "IPFSEnabled"=dword:00000000
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "AllowSurfGame"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
+  "AdvancedProtectionAllowed"=dword:00000000
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
+  "DefaultBrowserSettingEnabled"=dword:00000000
+  "DNSInterceptionChecksEnabled"=dword:00000000
+  "DnsOverHttpsMode"="off"
+  "DnsOverHttpsTemplates"=-
+  "HideWebStoreIcon"=dword:00000001
+  "HideWebStorePromo"=dword:00000001
+  "MediaRecommendationsEnabled"=dword:00000000
+  "NetworkPredictionOptions"=dword:00000002
+  "PromotionalTabsEnabled"=dword:00000000
+  "QuicAllowed"=dword:00000000
+  "SharedClipboardEnabled"=dword:00000000
+  "ShowFullUrlsInAddressBar"=dword:00000001
+  "SignedHTTPExchangeEnabled"=dword:00000000
+  "SSLVersionMin"="tls1.2"
+  "WPADQuickCheckEnabled"=dword:00000000
