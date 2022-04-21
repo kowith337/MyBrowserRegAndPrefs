@@ -68,8 +68,23 @@
       ]
     },
     "ExtensionSettings": {
+      "amazondotcom@search.mozilla.org": {
+        "installation_mode": "blocked"
+      },
+      "bing@search.mozilla.org": {
+        "installation_mode": "blocked"
+      },
+      "ebay@search.mozilla.org": {
+        "installation_mode": "blocked"
+      },
       "firefox@tampermonkey.net": {
         "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box and often show nagging popup that begging you for donations!",
+        "installation_mode": "blocked"
+      },
+      "google@search.mozilla.org": {
+        "installation_mode": "blocked"
+      },
+      "wikipedia@search.mozilla.org": {
         "installation_mode": "blocked"
       }
     },

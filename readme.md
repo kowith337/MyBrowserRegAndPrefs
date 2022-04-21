@@ -3,7 +3,7 @@ Every browsers that I'm using, I never install them as system program files, eve
 > [RIP Edge](https://github.com/AveYo/fox/blob/main/Edge_Removal.bat)...
 
 ### Recommended tools
-- [henry++'s ChrLauncher](https://github.com/henrypp/chrlauncher) for download and update `Chromium`, also can select other forks to use, include between `sync` and `nosync`, also `clang`, `ungoogled`, or setup as launcher with custom arguments for any browsers.
+- [henry++'s ChrLauncher](https://github.com/henrypp/chrlauncher) for download and update `Chromium`, also can select other forks to use, include between `sync` and `nosync`, also `ungoogled`, or setup as launcher with custom arguments for any browsers.
   > Pleases note that even you want to use the `sync` fork, don't expected it will works like `Google Chrome`, they've limited **Chromium** and other forks to access their **Sync APIs** (and anythings that rely to) until you join back to them! (Indeed, they need you to install **Google Chrome** and keep using it!)
 - [UndertakerBen's](https://github.com/UndertakerBen) portable updater of common(ly bloated) browsers...
   - Brave
@@ -36,28 +36,38 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 |----------------------------|-------------------|-------------------|-------------------|
 | **Chromium based**         |                   |                   |                   |
 | Chrome                     | :o:               | :o:               | :x:               |
-| Chromium / Rest of forks\* | :x:               | :o:               | :x:               |
+| Chromium\*                 | :x:               | :o:               | :x:               |
 | Brave                      | :x:               | :o:               | :x:               |
 | Vivaldi                    | :x:               | :o:               | :x:               |
 | Whale                      | :x:               | :o:               | :x:               |
 | Opera Chromium (also GX)   | :x:               | :x:               | :x:               |
 | **Gecko-based** (Servo)    |                   |                   |                   |
 | Firefox                    | :o:               | :o:               | :o:               |
-| IceCat / Iceweasel         | :x:               | :o:               | :o:               |
+| IceCat                     | :x:               | :o:               | :o:               |
+| Iceweasel                  | :x:               | :o:               | :o:               |
 | Librewolf                  | :x:               | :o:               | :o:               |
 | Thunderbird (Mail)         | :x:               | :o:               | :o:               |
 | **Gecko-based** (Goanna)   |                   |                   |                   |
 | Basilisk / Pale Moon       | :x:               | :x:               | :x:               |
 | Interlink (Mail)           | :x:               | :x:               | :x:               |
 
-\* e.g. Kinza, Iridium, Iron, Slimjet, etc (Electron apps, RPGMaker MV~MZ and any newer also affected!)
+\* May include any of forks, e.g. Kinza, Iridium, Iron, Slimjet, Yandex, etc. Also all apps that based on Electron \[e.g. Discord, Telegram, Visual Studio Code\/VSCodium\], Games that use RPGMaker MV\/MZ engine and any newer also affected!
 
 Note: Only `Windows` platform, this won't include remote policy, e.g. Active Directory, Device Policy, etc.
 
 ### Browsers download lists
 - [Iridium](https://iridiumbrowser.de)
-- [Kinza](https://kinza.jp/en)
+- [~~Kinza~~](https://kinza.jp/en)
 - [Librewolf](https://gitlab.com/librewolf-community/browser)
 - [Naver Whale](https://whale.naver.com/en/download)
-- [Slimjet](https://www.slimjet.com/en/dlpage.php)
 - Vivaldi [Stable](https://vivaldi.com/download) \/ [Snapshot](https://vivaldi.com/blog/desktop/snapshots)
+
+### FYI \/ Reminder \/ Todo
+- [Spyware Watchdog Browser Lists](https://spyware.neocities.org/articles/index.html)
+- `https://digdeeper.her.st/ghost/liftingtheveil.html`
+- Brave Tor? **No!**
+- Kinza is based on Chromium 89, and it's outdated now! But'm aware with `sec-ch-ua`, so I resist to use any higher than this if this browser still maintaining...
+- Ungoogled Chromium is the only one up-to-date Chromium fork that can eliminate client hints, but need to put `--disable-features=UserAgentClientHint` argument manually by user, I think they should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to (falsely) claim that it just use for security purpose!
+- Opera is `extremely high` bad behaviour, must use as disposable browser for low-data proxying. (their `VPN` is so slow, no matter about which regions!)
+  - It's very bad while using search engine, too! even you've install uBO and `allow extension for search engine` doesn't mean it's work, esp. `Google`, I've tested with ASTLW filterlist and find that it didn't prevent me against tracked parameters that `Google` layed their traps to all users!!
+  - Not many branded chromium forks are add the function that delete everything once all browser windows are closed, but sad to say it's potentially have range from high to extreme of spyware behaviour...
