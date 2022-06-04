@@ -1,0 +1,97 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
+  "DefaultClipboardSetting"=-
+  "DefaultFileHandlingGuardSetting"=-
+  "DefaultFileSystemReadGuardSetting"=-
+  "DefaultFileSystemWriteGuardSetting"=-
+  "DefaultGeolocationSetting"=-
+  "DefaultJavaScriptJitSetting"=-
+  "DefaultMediaStreamSetting"=-
+  "DefaultNotificationsSetting"=-
+  "DefaultPopupsSetting"=-
+  "DefaultSensorsSetting"=-
+  "DefaultSerialGuardSetting"=-
+  "DefaultWebBluetoothGuardSetting"=-
+  "DefaultWebHidGuardSetting"=-
+  "DefaultWebUsbGuardSetting"=-

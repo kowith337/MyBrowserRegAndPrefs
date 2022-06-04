@@ -1,6 +1,5 @@
 {
   "policies": {
-    "AllowedDomainsForApps": "",
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
     "SearchBar": "separate",
@@ -45,46 +44,105 @@
     },
     "Extensions": {
       "Uninstall": [
+		"{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}",
+		"{d61552ef-e2a6-4fb5-bf67-8990f0014957}",
+        "1und1@search.mozilla.org",
+        "allaannonser-sv-SE@search.mozilla.org",
+        "allegro-pl@search.mozilla.org",
+        "amazon@search.mozilla.org",
+        "amazondotcn@search.mozilla.org",
         "amazondotcom@search.mozilla.org",
-        "amazondotcom@search.waterfox.net",
-        "bing@search.mozilla.org",
+        "atlas-sk@search.mozilla.org",
+        "azerdict@search.mozilla.org",
+        "azet-sk@search.mozilla.org",
+        "baidu@search.mozilla.org",
+        "bbc-alba@search.mozilla.org",
         "bing@search.waterfox.net",
+        "bok-NO@search.mozilla.org",
+        "bolcom@search.mozilla.org",
+        "ceneji@search.mozilla.org",
+        "chambers-en-GB@search.mozilla.org",
+        "coccoc@search.mozilla.org",
+        "daum-kr@search.mozilla.org",
+        "ddg@search.waterfox.net",
+        "diec2@search.mozilla.org",
+        "drae@search.mozilla.org",
         "ebay@search.mozilla.org",
-        "ebay@search.waterfox.net",
-        "formautofill@mozilla.org",
-        "ecosia@search.mozilla.org",
         "ecosia@search.waterfox.net",
-        "google@search.mozilla.org",
+        "eki-ee@search.mozilla.org",
+        "eudict@search.mozilla.org",
+        "faclair-beag@search.mozilla.org",
+        "flip@search.mozilla.org",
+        "formautofill@mozilla.org",
+        "freelang@search.mozilla.org",
+        "gmx@search.mozilla.org",
         "google@search.waterfox.net",
+        "gulesider-NO@search.mozilla.org",
+        "heureka-cz@search.mozilla.org",
+        "hotline-ua@search.mozilla.org",
+        "kannadastore@search.mozilla.org",
+        "leo_ende_de@search.mozilla.org",
+        "list-am@search.mozilla.org",
+        "longdo@search.mozilla.org",
+        "mailcom@search.mozilla.org",
+        "mailru@search.mozilla.org",
+        "mapy-cz@search.mozilla.org",
+        "marktplaats@search.mozilla.org",
+        "mercadolibre@search.mozilla.org",
+        "mercadolivre@search.mozilla.org",
+        "morfix-dic@search.mozilla.org",
+        "najdi-si@search.mozilla.org",
+        "naver-kr@search.mozilla.org",
+        "neti-ee@search.mozilla.org",
+        "odpiralni@search.mozilla.org",
+        "olx@search.mozilla.org",
+        "oshiete-goo@search.mozilla.org",
+        "osta-ee@search.mozilla.org",
+        "ozonru@search.mozilla.org",
+        "palasprint@search.mozilla.org",
+        "pazaruvaj@search.mozilla.org",
+        "pogodak@search.mozilla.org",
+        "priberam@search.mozilla.org",
+        "priceru@search.mozilla.org",
+        "prisjakt-sv-SE@search.mozilla.org",
         "proxy-failover@mozilla.com",
-        "twitter@search.mozilla.org",
-        "twitter@search.waterfox.net",
-        "webcompat@mozilla.org",
+        "pwn-pl@search.mozilla.org",
+        "qwant@search.waterfox.net",
+        "qwantjr@search.mozilla.org",
+        "qxl-NO@search.mozilla.org",
+        "rakuten@search.mozilla.org",
+        "readmoo@search.mozilla.org",
+        "salidzinilv@search.mozilla.org",
+        "seznam-cz@search.mozilla.org",
+        "sslv@search.mozilla.org",
+        "startpage@search.waterfox.net",
+        "tearma@search.mozilla.org",
+        "tyda-sv-SE@search.mozilla.org",
+        "vatera@search.mozilla.org",
         "webcompat-reporter@mozilla.org",
+        "webcompat@mozilla.org",
+        "webde@search.mozilla.org",
         "wikipedia@search.mozilla.org",
-        "wikipedia@search.waterfox.net",
-        "yahoo@search.mozilla.org",
-        "yahoo@search.waterfox.net"
+        "wiktionary@search.mozilla.org",
+        "wolnelektury-pl@search.mozilla.org",
+        "yahoo-jp-auctions@search.mozilla.org",
+        "yahoo-jp@search.mozilla.org",
+        "yahoo@search.waterfox.net",
+        "yandex@search.mozilla.org",
+        "zoznam-sk@search.mozilla.org"
       ]
     },
     "ExtensionSettings": {
-      "amazondotcom@search.mozilla.org": {
+	  "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}": {
         "installation_mode": "blocked"
-      },
-      "bing@search.mozilla.org": {
+	  },
+
+	  "{d61552ef-e2a6-4fb5-bf67-8990f0014957}": {
         "installation_mode": "blocked"
-      },
-      "ebay@search.mozilla.org": {
-        "installation_mode": "blocked"
-      },
+	  },
+
       "firefox@tampermonkey.net": {
         "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box and often show nagging popup that begging you for donations!",
-        "installation_mode": "blocked"
-      },
-      "google@search.mozilla.org": {
-        "installation_mode": "blocked"
-      },
-      "wikipedia@search.mozilla.org": {
         "installation_mode": "blocked"
       }
     },
@@ -191,7 +249,7 @@
       "en"
     ],
     "SanitizeOnShutdown": {
-      "Cache": true,
+		"Cache": true,
       "FormData": true,
       "Sessions": true,
       "SiteSettings": true
@@ -200,11 +258,11 @@
       "Default": "Random searX",
       "Add": [
         {
-          "Alias": "ddg",
+          "Alias": "ds",
           "Description": "DuckDuckGo Start with custom prefs, no ads, no improving, no instant answers, no suggest, no notif guides, privacy embed, etc.",
           "IconURL": "https://start.duckduckgo.com/favicon.ico",
           "Method": "GET",
-          "Name": "DuckDuckGo Custom",
+          "Name": "DuckDuckGo Start (Custom)",
           "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "",
           "URLTemplate": "https://start.duckduckgo.com/?k1=-1&k5=1&kae=t&kaj=m&kak=-1&kao=-1&kap=-1&kaq=-1&kau=-1&kax=-1&kay=i&kd=-1&kg=g&kh=1&kk=-1&q={searchTerms}"
@@ -236,7 +294,7 @@
         }
       ],
       "Remove": [
-        "Amazon, Bing, eBay, Google, Twitter, Wikipedia"
+        "1&1 Suche, Allaannonser, Allegro, Am Faclair Beag, Atlas, Azerdict, Azet, BBC ┐ BBC Alba, Bing, Ceneje.si, Chambers (UK), Cốc Cốc, Diccionario RAE, DIEC2, DuckDuckGo, Ecosia, Encyklopedia PWN, EUdict Eng->Cro, flip.kz, Freelang (br), Gule sider, Heureka, Hotline, Kannada Store, LEO Eng-Deu, List.am, mail.com search, mail.com, Mapy.cz, MercadoLivre, Najdi.si, Neti, Odpiralni Časi, OLX.ba, Ordbok, Osta, OZON.ru, Palas Print, Pazaruvaj, Priberam, Price.ru, Prisjakt, Qwant Junior, Qwant, QXL, Readmoo 讀墨電子書, Salidzini.lv, Seznam, SS.lv, Startpage, tearma.ie, Tyda.se, Vatera.hu, WEB.DE Suche, Wolne Lektury, Yahoo! JAPAN, Yahoo!, Zoznam, Õigekeelsussõnaraamat, Погодак, Поиск Mail.Ru, מילון מורפיקס, พจนานุกรม ลองดู, ヤフオク!, 亚马逊, 教えて！goo, 楽天市場, 百度, 네이버, 다음"
       ],
       "PreventInstalls": false
     },

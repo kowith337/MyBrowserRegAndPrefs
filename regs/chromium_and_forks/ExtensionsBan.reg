@@ -6,49 +6,64 @@ Windows Registry Editor Version 5.00
 ;   before you're trying to do, since then, if I wish to donating to them, I will do it by myself by manually find those donation
 ;   links and click for it!!
 ;   * Because of above, don't they thing that they will get any donations from me, even just any cents and/or any satangs!!!
+;
+; About also banning "Chrome Remote Desktop" and "Adobe Acrobat DC", see...
+; https://decentsecurity.com/enterprise/#/ublock-for-google-chrome-deployment
 
 [HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
 
 [-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\ExtensionInstallBlacklist]
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
 
 [-HKEY_LOCAL_MACHINE\Software\Policies\Chromium\ExtensionInstallBlacklist]
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Chromium\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi\ExtensionInstallBlocklist]
 "1"="dhdgffkkebhmkfjojejmpbldmpobfkfo"
-"2"="fcmfnpggmnlmfebfghbfnillijihnkoh"
-"3"="gcalenpjmijncebpfijmoaglllgpjagf"
-"4"="iikmkjmpaadaobahmlepeloendndfphd"
-"5"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
+"2"="efaidnbmnnnibpcajpcglclefindmkaj"
+"3"="fcmfnpggmnlmfebfghbfnillijihnkoh"
+"4"="gbchcmhmhahfdphkhkmpfmihenigjmpp"
+"5"="gcalenpjmijncebpfijmoaglllgpjagf"
+"6"="iikmkjmpaadaobahmlepeloendndfphd"
+"7"="mfdhdgbonjidekjkjmjaneanmdmpmidf"
