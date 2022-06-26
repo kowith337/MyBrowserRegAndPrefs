@@ -4,7 +4,7 @@ Every browsers that I'm using, I never install them as system program files, eve
 
 ### Recommended tools
 - [henry++'s ChrLauncher](https://github.com/henrypp/chrlauncher) for download and update `Chromium`, also can select other forks to use, include between `sync` and `nosync`, also `ungoogled`, or setup as launcher with custom arguments for any browsers.
-  > Pleases note that even you want to use the `sync` fork, don't expected it will works like `Google Chrome`, they've limited **Chromium** and other forks to access their **Sync APIs** (and anythings that rely to) until you join back to them! (Indeed, they need you to install **Google Chrome** and keep using it!)
+  > Pleases note that even you want to use the `sync` fork, don't expected it will works like `Google Chrome`, they've limited **Chromium** and other forks to access their **Sync APIs** (and anythings that rely to) until you join back to them! (Indeed, they need you to install **Google Chrome** and using it!)
 - [UndertakerBen's](https://github.com/UndertakerBen) portable updater of common(ly bloated) browsers...
   - [Brave](https://github.com/UndertakerBen/PorBraveUpd)
   - [Chrome](https://github.com/UndertakerBen/PorChromeUpd)
@@ -23,10 +23,10 @@ Every browsers that I'm using, I never install them as system program files, eve
 
 ### Recommendation note for Firefox and any browsers that based on it
 Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
-- `doh-rollout@mozilla.org.xpi`: If you wish to use in-browser **DNS-over-HTTPS**, but mind ahead that it will use `Cloudflare` servers at the beginning, however, deleting this will make you no longer use its feature until you bring this **XPI** back!
+- `doh-rollout@mozilla.org.xpi`: If you wish to use in-browser **DNS-over-HTTPS**, but mind ahead that it will use **`Cloudflare-backend`** Mozilla servers at the beginning and it's doesn't use the same IP address of `Cloudflare` itself, however, deleting this will make you no longer use its feature until you bring this **XPI** back!
 - ~~`formautofill@mozilla.org.xpi`~~: Well, if you want to _save registration form_ **(and also credit cards)**, but in my opinion, I won't recommended to keep this!
 - `pictureinpicture@mozilla.org.xpi`: This should be keep retain, otherwise you cannot view videos in PiP popup (Like Chrome)
-- `proxy-failover@mozilla.org.xpi`: Deleting this will possibly prevent "step down" connections to direct or system connections in case if your connections to proxy are failed, however, directly change connection settings still possible.
+- ~~`proxy-failover@mozilla.org.xpi`~~: Deleting this will possibly prevent "step down" connections to direct or system connections in case if your connections to proxy are failed, however, directly change connection settings still possible.
 - `screenshots@mozilla.org.xpi`: In case if you want to make screencap in browser without (Win+)? **Print screen** or want to capture entire page (with scrolling) into single image, keep in mind that _it's possible to upload and share your screencap_ back to `Mozilla`, safe to remove if you don't want to upload and want to capture screen manually without this assist tool!
 - ~~`webcompat@mozilla.org.xpi`~~ and ~~`webcompat-reporter@mozilla.org.xpi`~~: I recommend to not keeping them, even it's legitimately use for report incompatibility sites that won't work for Firefox itself, but their add-ons about this are part of their `Telemetry`, so prefer to remove is better!
 
@@ -41,13 +41,13 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | Vivaldi                    | :x:               | :o:               | :x:               |
 | Whale                      | :x:               | :o:               | :x:               |
 | Opera Chromium (also GX)   | :x:               | :x:               | :x:               |
-| **Gecko-based** (Servo)    |                   |                   |                   |
+| **Gecko-based** (Post Gecko \/ Servo) |        |                   |                   |
 | Firefox                    | :o:               | :o:               | :o:               |
 | IceCat                     | :x:               | :o:               | :o:               |
 | Iceweasel                  | :x:               | :o:               | :o:               |
 | Librewolf                  | :x:               | :o:               | :o:               |
 | Thunderbird (Mail)         | :x:               | :o:               | :o:               |
-| **Gecko-based** (Goanna)   |                   |                   |                   |
+| **Gecko-based** (Goanna \/ XUL) |              |                   |                   |
 | Basilisk / Pale Moon       | :x:               | :x:               | :x:               |
 | Interlink (Mail)           | :x:               | :x:               | :x:               |
 
@@ -66,10 +66,12 @@ Note: Only `Windows` platform, this won't include remote policy, e.g. Active Dir
 - [Spyware Watchdog Browser Lists](https://spyware.neocities.org/articles/index.html)
 - `https://digdeeper.her.st/ghost/liftingtheveil.html`
 - Brave Tor? **No!**
+  - And also its search engine, I won't recommended it until they've allow users who turned off WebSocket and/or ServiceWorker eligible to use!
 - The final version of Kinza (since 2021/05/10) is based on Chromium 89, and **it's outdated now!** But I'm aware against `sec-ch-ua`, so I resist to use any higher than this if this browser still maintaining...
-- [Ungoogled Chromium](https://github.com/macchrome/winchrome) is the only one up-to-date Chromium fork that can eliminate client hints, but need to put `--disable-features=UserAgentClientHint` argument manually by user, I think they should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to claim that it just use for security purpose!
+- To surviving against client hints, you need to put `--disable-features=UserAgentClientHint` within launch argument, I think certain good forks of Chromium that respect privacy enough (e.g. [Iridium](https://iridiumbrowser.de), [Ungoogled Chromium](https://github.com/macchrome/winchrome)) should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to claim that it just use for security purpose!
 - Not many branded chromium forks are add the function that delete everything once all browser windows are closed, but sad to say it's potentially have range from **high** to **extreme** of spyware behaviour...
-- Opera is **extremely high** bad behaviour, must use as disposable browser for low-data proxying. (their `VPN` is so slow, no matter about which regions you've selected to!)
-  - It's very bad while using search engine, too! even you've install uBO and enabled `allow extension for search engine` doesn't mean it's work, esp. `Google`, I've tested with [ASTLW](https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/SurvivedTrackingLinkWarning.txt) filterlist and find that it didn't prevent me against tracked parameters that `Google` layed their traps already!!
+- _Opera_ is **extremely high** bad behaviour, must use as disposable browser for low-data proxying. (their `VPN` is so slow, no matter about which regions you've selected to!)
+  - It's very bad while using search engine, too! even you've install uBO and enabled `allow extension for search engine` doesn't mean it's work, esp. I've tested with [ASTLW](https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/SurvivedTrackingLinkWarning.txt) filterlist and found that it didn't prevent me against tracked parameters for selected default search engine!
+  > Of course, Opera didn't give any ability to users to set another default engine and remove any stock engine, it's too shame!!!
 
-###
+- - - - -

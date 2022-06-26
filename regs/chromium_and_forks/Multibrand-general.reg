@@ -9,7 +9,7 @@ Windows Registry Editor Version 5.00
   "DnsOverHttpsTemplates"=-
   "HideWebStoreIcon"=dword:00000001
   "HideWebStorePromo"=dword:00000001
-  "IPFSEnabled"=dword:00000000
+  "IPFSEnabled"=dword:00000000 ; Don't enable Brave IPFS
   "MediaRecommendationsEnabled"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002
   "PromotionalTabsEnabled"=dword:00000000
@@ -21,9 +21,9 @@ Windows Registry Editor Version 5.00
   "WPADQuickCheckEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-  "AdvancedProtectionAllowed"=dword:00000000
-  "AdvancedProtectionDeepScanningEnabled"=dword:00000000
-  "DefaultBrowserSettingEnabled"=dword:00000000
+  "AdvancedProtectionAllowed"=dword:00000000 ; Disable SafeBrowsing Advance
+  "AdvancedProtectionDeepScanningEnabled"=dword:00000000 ; Disable SafeBrowsing Advance DeepScan
+  "DefaultBrowserSettingEnabled"=dword:00000000 ; Resist to set default browser, since I'm run all of them as semi-portable!
   "DNSInterceptionChecksEnabled"=dword:00000000
   "DnsOverHttpsMode"="off"
   "DnsOverHttpsTemplates"=-
@@ -61,7 +61,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
   "AdvancedProtectionAllowed"=dword:00000000
   "AdvancedProtectionDeepScanningEnabled"=dword:00000000
-  "AllowSurfGame"=dword:00000000
+  "AllowSurfGame"=dword:00000000 ; Disable edge surf minigame (similar to chrome dinosaur)
   "DefaultBrowserSettingEnabled"=dword:00000000
   "DNSInterceptionChecksEnabled"=dword:00000000
   "DnsOverHttpsMode"="off"
