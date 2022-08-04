@@ -47,7 +47,7 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | Iceweasel                  | :x:               | :o:               | :o:               |
 | Librewolf                  | :x:               | :o:               | :o:               |
 | Thunderbird (Mail)         | :x:               | :o:               | :o:               |
-| **Gecko-based** (Goanna \/ XUL) |              |                   |                   |
+| **Gecko-based** (Pre-servo XUL \/ Goanna ) |   |                   |                   |
 | Basilisk / Pale Moon       | :x:               | :x:               | :x:               |
 | Interlink (Mail)           | :x:               | :x:               | :x:               |
 
@@ -59,19 +59,21 @@ Note: Only `Windows` platform, this won't include remote policy, e.g. Active Dir
 - [~~Kinza~~](https://kinza.jp/en)
 - [Iridium](https://iridiumbrowser.de)
 - [Librewolf](https://gitlab.com/librewolf-community/browser)
-- [Naver Whale](https://whale.naver.com/en/download)
+- [~~Naver Whale~~](https://whale.naver.com/en/download)
 - Vivaldi [Stable](https://vivaldi.com/download) \/ [Snapshot](https://vivaldi.com/blog/desktop/snapshots)
 
 ### FYI / Reminder / Todo
-- [Spyware Watchdog Browser Lists](https://spyware.neocities.org/articles/index.html)
-- `https://digdeeper.her.st/ghost/liftingtheveil.html`
 - Brave Tor? **No!**
   - And also its search engine, I won't recommended it until they've allow users who turned off WebSocket and/or ServiceWorker eligible to use!
+- [Spyware Watchdog Browser Lists](https://spyware.neocities.org/articles/index.html)
+- `https://digdeeper.her.st/ghost/liftingtheveil.html`
+- `Naver Whale` will become **useless browser** because it will falsely detected as no internet available if you're blocked `Google` DNS IP address both IPv4 and IPv6!
 - The final version of Kinza (since 2021/05/10) is based on Chromium 89, and **it's outdated now!** But I'm aware against `sec-ch-ua`, so I resist to use any higher than this if this browser still maintaining...
-- To surviving against client hints, you need to put `--disable-features=UserAgentClientHint` within launch argument, I think certain good forks of Chromium that respect privacy enough (e.g. [Iridium](https://iridiumbrowser.de), [Ungoogled Chromium](https://github.com/macchrome/winchrome)) should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to claim that it just use for security purpose!
+- Any registry or group policy configured to Chrome and/or Chromium-based browsers will be trigger an organisation mode, it will make DoH unconfigurable and I don't know this will cause DoH permanently off or not? Otherwise you can configure manually via regedit or group policy, if your device are not under any real organisations.
+- To surviving against client hints of any post-88 Chrome\/Chromium, you need to put `--disable-features=UserAgentClientHint` within launch argument, I think certain good forks of Chromium that respect privacy enough (e.g. [Iridium](https://iridiumbrowser.de), [Ungoogled Chromium](https://github.com/macchrome/winchrome)) should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to claim that it just use for security purpose!
 - Not many branded chromium forks are add the function that delete everything once all browser windows are closed, but sad to say it's potentially have range from **high** to **extreme** of spyware behaviour...
 - _Opera_ is **extremely high** bad behaviour, must use as disposable browser for low-data proxying. (their `VPN` is so slow, no matter about which regions you've selected to!)
   - It's very bad while using search engine, too! even you've install uBO and enabled `allow extension for search engine` doesn't mean it's work, esp. I've tested with [ASTLW](https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/SurvivedTrackingLinkWarning.txt) filterlist and found that it didn't prevent me against tracked parameters for selected default search engine!
-  > Of course, Opera didn't give any ability to users to set another default engine and remove any stock engine, it's too shame!!!
+  > Of course, Opera didn't give any ability to users to set another user-customised default and remove any stock engine, it's too shame!!!
 
 - - - - -

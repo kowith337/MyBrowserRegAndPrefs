@@ -1,16 +1,15 @@
 {
+  "__COMMENT__ Section": "",
   "policies": {
-    "OverrideFirstRunPage": "",
-    "OverridePostUpdatePage": "",
-    "SearchBar": "separate",
-    "SSLVersionMin": "tls1.2",
-    "Bookmarks": [
-      {}
-    ],
+    "AppAutoUpdate": false,
+    "BackgroundAppUpdate": false,
+    "BlockAboutSupport": false,
+    "Bookmarks": [{}],
+    "CaptivePortal": false,
     "Certificates": {
       "ImportEnterpriseRoots": false
     },
-    "Cookies": {
+    "Cookies": { "__COMMENT__ Cookies": "Block 3p is recommended for privacy focus, if you don't want to remove cookies when exit, set `ExpireAtSessionEnd` to `false`",
       "AcceptThirdParty": "never",
       "Allow": [],
       "AllowSession": [],
@@ -20,32 +19,70 @@
       "Locked": false,
       "RejectTracker": true
     },
-    "DisabledCiphers": {},
+    "DNSOverHTTPS": {
+      "__COMMENT__ DoH": "Most Firefox default turn on DoH and use CrapFlare-backed from the beginning, this should turn off from the beginning for prevent leaked to unwanted domains or turn off permanently if you have another protection, e.g. DNSCrypt, pDNSF.",
+	  "Enabled": false,
+      "ExcludedDomains": [],
+      "Locked": true,
+      "ProviderURL": ""
+    },
+    "DisableAppUpdate": false,
+    "DisableBuiltinPDFViewer": true,
+    "DisableDefaultBrowserAgent": true,
+    "DisableDeveloperTools": false,
+    "DisableFeedbackCommands": false,
+    "DisableFirefoxAccounts": true,
+    "DisableFirefoxScreenshots": false,
+    "DisableFirefoxStudies": true,
+    "DisableForgetButton": false,
+    "DisableFormHistory": true,
+    "DisableIceCatScreenshots": false,
+    "DisableIceCatStudies": true,
+    "DisableMasterPasswordCreation": false,
+    "DisablePasswordReveal": true,
+    "DisablePocket": true,
+    "DisablePrivateBrowsing": false,
+    "DisableProfileImport": false,
+    "DisableProfileRefresh": false,
+    "DisableSafeMode": false,
     "DisableSecurityBypass": {
       "InvalidCertificate": false,
       "SafeBrowsing": false
     },
-    "DNSOverHTTPS": {
-      "ProviderURL": "",
-      "ExcludedDomains": [],
-      "Enabled": false,
-      "Locked": true
-    },
+    "DisableSetDesktopBackground": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableTelemetry": true,
+    "DisabledCiphers": {},
+    "DisplayBookmarksToolbar": false,
+    "DisplayMenuBar": true,
+    "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
-      "Exceptions": [],
       "Cryptomining": false,
+      "Exceptions": [],
       "Fingerprinting": false,
       "Locked": false,
       "Value": false
     },
-    "EncryptedMediaExtensions": {
+    "EncryptedMediaExtensions": { "__COMMENT__ EME": "Disable and lock EME (related to `media.eme` config)",
       "Enabled": false,
       "Locked": true
     },
-    "Extensions": {
+    "ExtensionSettings": { "__COMMENT__ ExtSettings": "Leveled extension blocklist",
+      "firefox@tampermonkey.net": {
+        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you to make donations!",
+        "installation_mode": "blocked"
+      },
+      "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}": {
+        "installation_mode": "blocked"
+      },
+      "{d61552ef-e2a6-4fb5-bf67-8990f0014957}": {
+        "installation_mode": "blocked"
+      }
+    },
+    "Extensions": { "__COMMENT__ ExtControl": "Control to remove unwanted extensions and maybe search engines.",
       "Uninstall": [
-		"{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}",
-		"{d61552ef-e2a6-4fb5-bf67-8990f0014957}",
+        "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}",
+        "{d61552ef-e2a6-4fb5-bf67-8990f0014957}",
         "1und1@search.mozilla.org",
         "allaannonser-sv-SE@search.mozilla.org",
         "allegro-pl@search.mozilla.org",
@@ -132,20 +169,6 @@
         "zoznam-sk@search.mozilla.org"
       ]
     },
-    "ExtensionSettings": {
-	  "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}": {
-        "installation_mode": "blocked"
-	  },
-
-	  "{d61552ef-e2a6-4fb5-bf67-8990f0014957}": {
-        "installation_mode": "blocked"
-	  },
-
-      "firefox@tampermonkey.net": {
-        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box and often show nagging popup that begging you for donations!",
-        "installation_mode": "blocked"
-      }
-    },
     "FirefoxHome": {
       "Highlights": false,
       "Locked": false,
@@ -159,13 +182,14 @@
       "Locked": true
     },
     "Handlers": {},
+    "HardwareAcceleration": false,
     "Homepage": {
-      "StartPage": "none",
-      "URL": "",
       "Additional": [],
-      "Locked": false
+      "Locked": false,
+      "StartPage": "none",
+      "URL": ""
     },
-    "IcecatHome": {
+    "IcecatHome": { "__COMMENT__ HomePageTab": "Same as FirefoxHome, but apply for IceCat",
       "Highlights": false,
       "Locked": false,
       "Pocket": false,
@@ -175,15 +199,24 @@
     },
     "LocalFileLinks": [],
     "ManagedBookmarks": [],
+    "ManualAppUpdateOnly": true,
+    "NetworkPrediction": false,
+    "NewTabPage": false,
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "OfferToSaveLoginsDefault": false,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
     "PDFjs": {
-      "Enabled": false,
-      "EnablePermissions": false
+      "EnablePermissions": false,
+      "Enabled": false
     },
-    "Permissions": {
+    "PasswordManagerEnabled": false,
+    "Permissions": { "__COMMENT__ Permissions": "Control default permissions, some will permanenly locked because of useless!",
       "Autoplay": {
-        "Default": "block-audio-video",
         "Allow": [],
         "Block": [],
+        "Default": "block-audio-video",
         "Locked": false
       },
       "Camera": {
@@ -220,27 +253,29 @@
       "Default": true,
       "Locked": false
     },
-    "Preferences": {
+    "Preferences": { "__COMMENT__ AboutConfig": "Set any `about:config` prefs here!",
       "accessibility.force_disabled": {
-        "Value": 1,
-        "Status": "default"
+        "Status": "default",
+        "Value": 1
       },
       "browser.tabs.warnOnClose": {
         "Status": "locked",
         "Value": false
       }
     },
-    "Proxy": {
-      "SOCKSVersion": 5,
+    "PrimaryPassword": false,
+    "PromptForDownloadLocation": true,
+    "Proxy": { "__COMMENT__ Proxy": "If you want to use certain connections from the beginning, setup here!",
       "AutoConfigURL": "",
+      "AutoLogin": false,
       "FTPProxy": "",
-      "HTTPProxy": "203.144.144.168:8080",
+      "HTTPProxy": "",
+      "Locked": false,
       "Mode": "system",
       "Passthrough": "<local>",
       "SOCKSProxy": "127.0.0.1:9050",
-      "SSLProxy": "203.144.144.169:8080",
-      "AutoLogin": false,
-      "Locked": false,
+      "SOCKSVersion": 5,
+      "SSLProxy": "127.0.0.1:8118",
       "UseHTTPProxyForAllProtocols": false,
       "UseProxyForDNS": true
     },
@@ -248,56 +283,42 @@
       "en-US",
       "en"
     ],
-    "SanitizeOnShutdown": {
-		"Cache": true,
+    "SSLVersionMin": "tls1.2",
+    "SanitizeOnShutdown": { "__COMMENT__ Sanitize": "Delete some leftover traces",
+      "Cache": true,
       "FormData": true,
       "Sessions": true,
       "SiteSettings": true
     },
-    "SearchEngines": {
-      "Default": "Random searX",
+    "SearchBar": "separate",
+    "SearchEngines": { "__COMMENT__ Search": "Add, remove and set default search engine here!",
       "Add": [
         {
-          "Alias": "ds",
-          "Description": "DuckDuckGo Start with custom prefs, no ads, no improving, no instant answers, no suggest, no notif guides, privacy embed, etc.",
-          "IconURL": "https://start.duckduckgo.com/favicon.ico",
-          "Method": "GET",
-          "Name": "DuckDuckGo Start (Custom)",
+          "Alias": "@lx",
+          "Description": "A privacy respecting free as in freedom meta search engine for Google and popular torrent sites ",
+          "IconURL": "https://librex.beparanoid.de/favicon.ico",
+          "Method": "POST",
+          "Name": "LibreX",
           "PostData": "q={searchTerms}",
-          "SuggestURLTemplate": "",
-          "URLTemplate": "https://start.duckduckgo.com/?k1=-1&k5=1&kae=t&kaj=m&kak=-1&kao=-1&kap=-1&kaq=-1&kau=-1&kax=-1&kay=i&kd=-1&kg=g&kh=1&kk=-1&q={searchTerms}"
+          "URLTemplate": "https://librex.beparanoid.de/search.php"
         },
         {
-          "Alias": "iv",
-          "Description": "Invidious is an alternative front-end to YouTube",
-          "IconURL": "https://invidio.xamh.de/favicon-16x16.png",
-          "Method": "GET",
-          "Name": "Invidious (XAMH)",
-          "URLTemplate": "https://invidio.xamh.de/search?q={searchTerms}"
-        },
-        {
-          "Alias": "nt",
-          "Description": "Nitter, alternative Twitter frontend that focused on privacy and performance.",
-          "IconURL": "https://nitter.net/favicon-16x16.png",
-          "Method": "GET",
-          "Name": "Nitter (No NativeRTs)",
-          "URLTemplate": "https://nitter.net/search?e-nativeretweets=on&q={searchTerms}"
-        },
-        {
-          "Alias": "rx",
+          "Alias": "@rx",
           "Description": "Random Searx Redirector",
           "IconURL": "https://searx.neocities.org/favicon.ico",
           "Method": "GET",
           "Name": "Random searX",
-          "PostData": "q={searchTerms}",
           "URLTemplate": "https://searx.neocities.org/#q={searchTerms}"
         }
       ],
+      "Default": "LibreX",
+      "PreventInstalls": false,
       "Remove": [
         "1&1 Suche, Allaannonser, Allegro, Am Faclair Beag, Atlas, Azerdict, Azet, BBC ┐ BBC Alba, Bing, Ceneje.si, Chambers (UK), Cốc Cốc, Diccionario RAE, DIEC2, DuckDuckGo, Ecosia, Encyklopedia PWN, EUdict Eng->Cro, flip.kz, Freelang (br), Gule sider, Heureka, Hotline, Kannada Store, LEO Eng-Deu, List.am, mail.com search, mail.com, Mapy.cz, MercadoLivre, Najdi.si, Neti, Odpiralni Časi, OLX.ba, Ordbok, Osta, OZON.ru, Palas Print, Pazaruvaj, Priberam, Price.ru, Prisjakt, Qwant Junior, Qwant, QXL, Readmoo 讀墨電子書, Salidzini.lv, Seznam, SS.lv, Startpage, tearma.ie, Tyda.se, Vatera.hu, WEB.DE Suche, Wolne Lektury, Yahoo! JAPAN, Yahoo!, Zoznam, Õigekeelsussõnaraamat, Погодак, Поиск Mail.Ru, מילון מורפיקס, พจนานุกรม ลองดู, ヤフオク!, 亚马逊, 教えて！goo, 楽天市場, 百度, 네이버, 다음"
-      ],
-      "PreventInstalls": false
+      ]
     },
+    "SearchSuggestEnabled": false,
+    "ShowHomeButton": true,
     "SupportMenu": {
       "Title": "Unsupported",
       "URL": "https://kowith337.github.io/unsupported.txt"
@@ -309,48 +330,6 @@
       "UrlbarInterventions": false,
       "WhatsNew": false
     },
-    "AppAutoUpdate": false,
-    "BackgroundAppUpdate": false,
-    "BlockAboutSupport": false,
-    "CaptivePortal": false,
-    "DisableAppUpdate": false,
-    "DisableBuiltinPDFViewer": true,
-    "DisableDefaultBrowserAgent": true,
-    "DisableDeveloperTools": false,
-    "DisableFeedbackCommands": false,
-    "DisableFirefoxAccounts": true,
-    "DisableFirefoxScreenshots": false,
-    "DisableFirefoxStudies": true,
-    "DisableForgetButton": false,
-    "DisableFormHistory": true,
-    "DisableIceCatScreenshots": false,
-    "DisableIceCatStudies": true,
-    "DisableMasterPasswordCreation": false,
-    "DisablePasswordReveal": true,
-    "DisablePocket": true,
-    "DisablePrivateBrowsing": false,
-    "DisableProfileImport": false,
-    "DisableProfileRefresh": false,
-    "DisableSafeMode": false,
-    "DisableSetDesktopBackground": true,
-    "DisableSystemAddonUpdate": true,
-    "DisableTelemetry": true,
-    "DisplayBookmarksToolbar": false,
-    "DisplayMenuBar": true,
-    "DontCheckDefaultBrowser": true,
-    "ExtensionUpdate": true,
-    "HardwareAcceleration": false,
-    "ManualAppUpdateOnly": true,
-    "NetworkPrediction": false,
-    "NewTabPage": false,
-    "NoDefaultBookmarks": true,
-    "OfferToSaveLogins": false,
-    "OfferToSaveLoginsDefault": false,
-    "PasswordManagerEnabled": false,
-    "PrimaryPassword": false,
-    "PromptForDownloadLocation": true,
-    "SearchSuggestEnabled": false,
-    "ShowHomeButton": true,
     "WindowsSSO": false
   }
 }

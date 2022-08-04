@@ -11,10 +11,10 @@ Windows Registry Editor Version 5.00
 ;; "DefaultMediaStreamSetting"           > Media capture devices, e.g. webcam, microphone, etc. (deprecated?)
 ;; "DefaultNotificationsSetting"         > Web notifications (USELESS!) [THIS FEATURE ARE USE AS ADS SPAM NOWADAYS!!]
 ;; "DefaultPopupsSetting"                > Pop-up windows (often use by ads)
-;; "DefaultSensorsSetting"               > Device Sensors (DANGEROUS!) [DETECT ROTATIONS AND GYRO FOR MOVABLE DEVICES!!]
-;; "DefaultSerialGuardSetting"           > Serial Ports
-;; "DefaultWebBluetoothGuardSetting"     > Bluetooth (DANGEROUS!) [POTENTIALLY CONNECT TO DEVICES EVEN NOT YET PAIRED!!]
-;; "DefaultWebHidGuardSetting"           > Input devices, e.g. Joystick
+;; "DefaultSensorsSetting"               > Device Sensors (USELESS FOR PC!) [DETECT ROTATIONS AND GYRO FOR MOVABLE DEVICES!!]
+;; "DefaultSerialGuardSetting"           > Serial Ports (USELESS FOR NOTEBOOK AND LATE 201X+ NEWER PC!)
+;; "DefaultWebBluetoothGuardSetting"     > Bluetooth (DANGEROUS!) [POTENTIALLY CONNECT TO DEVICES EVEN IT DIDN'T YET PAIRED!!]
+;; "DefaultWebHidGuardSetting"           > Input devices, e.g. Joystick (Doubt) [In case if you play web games or RPGMV~MZ]
 ;; "DefaultWebUsbGuardSetting"           > Devices that connected via USB (Doubt) [In case if you use FIDO USB]
 ;
 ; If they will have more policies to control default state of these below, I will update this default registry policy.

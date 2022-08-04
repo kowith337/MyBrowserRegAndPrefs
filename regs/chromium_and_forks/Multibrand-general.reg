@@ -24,20 +24,20 @@ Windows Registry Editor Version 5.00
   "AdvancedProtectionAllowed"=dword:00000000 ; Disable SafeBrowsing Advance
   "AdvancedProtectionDeepScanningEnabled"=dword:00000000 ; Disable SafeBrowsing Advance DeepScan
   "DefaultBrowserSettingEnabled"=dword:00000000 ; Resist to set default browser, since I'm run all of them as semi-portable!
-  "DNSInterceptionChecksEnabled"=dword:00000000
-  "DnsOverHttpsMode"="off"
-  "DnsOverHttpsTemplates"=-
+  "DNSInterceptionChecksEnabled"=dword:00000000 ; This will disable interception check that flushing any apps that able to logging DNS requests with random NXDOMAIN (I'm often use with Invizible and pDNSF)
+  "DnsOverHttpsMode"="off" ; Turn off DoH
+  "DnsOverHttpsTemplates"=- ; Remove DoH endpoint, if it have any in registry!
   "HideWebStoreIcon"=dword:00000001
   "HideWebStorePromo"=dword:00000001
   "MediaRecommendationsEnabled"=dword:00000000
-  "NetworkPredictionOptions"=dword:00000002
+  "NetworkPredictionOptions"=dword:00000002 ; Disable tab preloading!
   "PromotionalTabsEnabled"=dword:00000000
-  "QuicAllowed"=dword:00000000
+  "QuicAllowed"=dword:00000000 ; STOP QUIC!
   "SharedClipboardEnabled"=dword:00000000
-  "ShowFullUrlsInAddressBar"=dword:00000001
+  "ShowFullUrlsInAddressBar"=dword:00000001 ; Force show full URLs, they somehow truncated and hide parameters too! (esp. while you're searching on Goolag!!)
   "SignedHTTPExchangeEnabled"=dword:00000000
   "SSLVersionMin"="tls1.2"
-  "WPADQuickCheckEnabled"=dword:00000000
+  "WPADQuickCheckEnabled"=dword:00000000 ; STOP WPAD
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
   "AdvancedProtectionAllowed"=dword:00000000
