@@ -54,7 +54,7 @@
     },
     "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
-      "__COMMENT__TrackingProtection": "You may need to neuturize TPL to prevent downloading allow(white)lists first, e.g. you can look to my overwrite cfg for pointing allow(white)lists to 'unsupported', otherwise, see `Preferences` section",
+      "__COMMENT__TrackingProtection": "You may need to neuturize TPL to prevent downloading allow(white)lists first, e.g. you can look to my overwrite cfg for pointing allow(white)lists to 'unsupported'",
       "Cryptomining": true,
       "Exceptions": [],
       "Fingerprinting": true,
@@ -81,6 +81,7 @@
         "azet-sk@search.mozilla.org",
         "baidu@search.mozilla.org",
         "bbc-alba@search.mozilla.org",
+        "bing@search.mozilla.org",
         "bing@search.waterfox.net",
         "bok-NO@search.mozilla.org",
         "bolcom@search.mozilla.org",
@@ -88,10 +89,12 @@
         "chambers-en-GB@search.mozilla.org",
         "coccoc@search.mozilla.org",
         "daum-kr@search.mozilla.org",
+        "ddg@search.mozilla.org",
         "ddg@search.waterfox.net",
         "diec2@search.mozilla.org",
         "drae@search.mozilla.org",
         "ebay@search.mozilla.org",
+        "ecosia@search.mozilla.org",
         "ecosia@search.waterfox.net",
         "eki-ee@search.mozilla.org",
         "eudict@search.mozilla.org",
@@ -100,6 +103,7 @@
         "formautofill@mozilla.org",
         "freelang@search.mozilla.org",
         "gmx@search.mozilla.org",
+        "google@search.mozilla.org",
         "google@search.waterfox.net",
         "gulesider-NO@search.mozilla.org",
         "heureka-cz@search.mozilla.org",
@@ -131,6 +135,7 @@
         "prisjakt-sv-SE@search.mozilla.org",
         "proxy-failover@mozilla.com",
         "pwn-pl@search.mozilla.org",
+        "qwant@search.mozilla.org",
         "qwant@search.waterfox.net",
         "qwantjr@search.mozilla.org",
         "qxl-NO@search.mozilla.org",
@@ -139,6 +144,7 @@
         "salidzinilv@search.mozilla.org",
         "seznam-cz@search.mozilla.org",
         "sslv@search.mozilla.org",
+        "startpage@search.mozilla.org",
         "startpage@search.waterfox.net",
         "tearma@search.mozilla.org",
         "tyda-sv-SE@search.mozilla.org",
@@ -151,6 +157,7 @@
         "wolnelektury-pl@search.mozilla.org",
         "yahoo-jp-auctions@search.mozilla.org",
         "yahoo-jp@search.mozilla.org",
+        "yahoo@search.mozilla.org",
         "yahoo@search.waterfox.net",
         "yandex@search.mozilla.org",
         "zoznam-sk@search.mozilla.org"
@@ -179,6 +186,7 @@
       "TopSites": false
     },
     "FlashPlugin": {
+      "__COMMENT__Flash": "Flash is dead, Long live Adobe!",
       "Default": false,
       "Locked": true
     },
@@ -259,64 +267,12 @@
     "Preferences": {
       "__COMMENT__AboutConfig": "Set any `about:config` prefs with desired status here, beware that original firefox and certain forks disabled this due to stability reasons!",
       "accessibility.force_disabled": {
-        "Status": "default",
+        "Status": "locked",
         "Value": 1
       },
       "browser.tabs.warnOnClose": {
-        "Status": "locked",
+        "Status": "default",
         "Value": false
-      },
-      "privacy.query_stripping.enabled": {
-        "Status": "default",
-        "Value": true
-      },
-      "privacy.query_stripping.enabled.pbmode": {
-        "Status": "default",
-        "Value": true
-      },
-      "privacy.query_stripping.strip_list": {
-        "Status": "default",
-        "Value": "__hsfp __hssc __hstc __s _hsenc _openstat dclid fbclid gbraid gclid hsCtaTracking igshid mc_eid ml_subscriber ml_subscriber_hash msclkid oft_c oft_ck oft_d oft_id oft_ids oft_k oft_lk oft_sk oly_anon_id oly_enc_id rb_clickid s_cid twclid vero_conv vero_id wbraid wickedid yclid utm_ad utm_affiliate utm_brand utm_campaign utm_campaignid utm_channel utm_cid utm_content utm_creative utm_emcid utm_emmid utm_id utm_keyword utm_medium utm_name utm_place utm_product utm_pubreferrer utm_reader utm_referrer utm_serial utm_session utm_siteid utm_social utm_social-type utm_source utm_supplier utm_swu utm_term utm_umguk utm_userid utm_viz_id"
-      },
-      "urlclassifier.features.cryptomining.annotate.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.cryptomining.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.emailtracking.allowlistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.emailtracking.datacollection.allowlistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.fingerprinting.annotate.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.fingerprinting.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.socialtracking.annotate.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.features.socialtracking.whitelistTables": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.trackingAnnotationWhitelistTable": {
-        "Status": "locked",
-        "Value": "unsupported"
-      },
-      "urlclassifier.trackingWhitelistTable": {
-        "Status": "locked",
-        "Value": "unsupported"
       }
     },
     "PrimaryPassword": false,
@@ -431,6 +387,7 @@
         "EUdict Eng->Cro",
         "flip.kz",
         "Freelang (br)",
+        "Google",
         "Gule sider",
         "Heureka",
         "Hotline",
@@ -465,6 +422,7 @@
         "Tyda.se",
         "Vatera.hu",
         "WEB.DE Suche",
+        "Wikipedia (en)",
         "Wolne Lektury",
         "Yahoo! JAPAN",
         "Yahoo!",
