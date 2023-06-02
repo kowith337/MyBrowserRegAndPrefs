@@ -115,3 +115,5 @@ Windows Registry Editor Version 5.00
   "SignedHTTPExchangeEnabled"=dword:00000000
   "SSLVersionMin"="tls1.2"
   "WPADQuickCheckEnabled"=dword:00000000
+;; I beg anyone who can find registry key to disable vivaldi games, please tell me ASAP!
+;; Because I cannot find them in `about:policy` either!!

@@ -8,17 +8,20 @@ Windows Registry Editor Version 5.00
 ;; "DefaultFileSystemWriteGuardSetting"  > File system write
 ;; "DefaultGeolocationSetting"           > Geolocation (DANGEROUS!) [DETECT REAL LOCATION OF YOU!!]
 ;; "DefaultJavaScriptJitSetting"         > Just In Time Javascripts
+;; "DefaultLocalFontsSetting"            > Read installed fonts in your system (DANGEROUS nowadays due to fingerprintable)
 ;; "DefaultMediaStreamSetting"           > Media capture devices, e.g. webcam, microphone, etc. (deprecated?)
 ;; "DefaultNotificationsSetting"         > Web notifications (USELESS!) [THIS FEATURE ARE USE AS ADS SPAM NOWADAYS!!]
-;; "DefaultPopupsSetting"                > Pop-up windows (often use by ads)
+;; "DefaultPopupsSetting"                > Pop-up windows (Often use by ads)
 ;; "DefaultSensorsSetting"               > Device Sensors (USELESS FOR PC!) [DETECT ROTATIONS AND GYRO FOR MOVABLE DEVICES!!]
 ;; "DefaultSerialGuardSetting"           > Serial Ports (USELESS FOR NOTEBOOK AND LATE 201X+ NEWER PC!)
 ;; "DefaultWebBluetoothGuardSetting"     > Bluetooth (DANGEROUS!) [POTENTIALLY CONNECT TO DEVICES EVEN IT DIDN'T YET PAIRED!!]
 ;; "DefaultWebHidGuardSetting"           > Input devices, e.g. Joystick (Doubt) [In case if you play web games or RPGMV~MZ]
 ;; "DefaultWebUsbGuardSetting"           > Devices that connected via USB (Doubt) [In case if you use FIDO USB]
+;; "DefaultWindowManagementSetting"      > Your browser or screen width/height, and/or fullscreen state (Chrome 111+)
+;; "DefaultWindowPlacementSetting"       > Your browser or screen width/height, and/or fullscreen state (Chrome 100~111)
 ;
 ; If they will have more policies to control default state of these below, I will update this default registry policy.
-; But from now on, you may need to config them manually after first launch 
+; But from now on, you may need to config them manually after first launch...
 ; - Augmented reality (AR)
 ; - Background Sync
 ; - Clipboard (as browser-wide)
@@ -30,7 +33,7 @@ Windows Registry Editor Version 5.00
 ; - System fonts access
 ; - Unsandboxed plugins
 ; - Virtual Reality (VR)
-; - Window placement
+; - Window management / placement
 ;
 ; Proportion: try put device offline or block network usage with firewall apps, then allow or reconnect networks once you're set!
 
@@ -41,6 +44,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -49,6 +53,8 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
   "DefaultClipboardSetting"=dword:00000002
@@ -57,6 +63,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -65,6 +72,8 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
   "DefaultClipboardSetting"=dword:00000002
@@ -73,6 +82,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -81,6 +91,8 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
   "DefaultClipboardSetting"=dword:00000002
@@ -89,6 +101,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -97,6 +110,8 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale]
   "DefaultClipboardSetting"=dword:00000002
@@ -105,6 +120,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -113,6 +129,8 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
   "DefaultClipboardSetting"=dword:00000002
@@ -121,6 +139,7 @@ Windows Registry Editor Version 5.00
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
@@ -129,3 +148,5 @@ Windows Registry Editor Version 5.00
   "DefaultWebBluetoothGuardSetting"=dword:00000002
   "DefaultWebHidGuardSetting"=dword:00000002
   "DefaultWebUsbGuardSetting"=dword:00000002
+  "DefaultWindowManagementSetting"=dword:00000002
+  "DefaultWindowPlacementSetting"=dword:00000002

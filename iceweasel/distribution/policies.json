@@ -12,7 +12,7 @@
       "ImportEnterpriseRoots": false
     },
     "Cookies": {
-      "__COMMENT__Cookies": "Block 3p is recommended for privacy focus (and also make it like temporary browser), if you don't want to remove cookies when exit, set `ExpireAtSessionEnd` to `false`",
+      "__COMMENT__Cookies": "Block 3p is recommended for privacy focus (and also make it like temporary browser), you can config browser later if you don't want to remove cookies after exit!",
       "AcceptThirdParty": "never",
       "Allow": [],
       "AllowSession": [],
@@ -22,7 +22,6 @@
       "Locked": false,
       "RejectTracker": true
     },
-    "DisableAppUpdate": false,
     "DisableBuiltinPDFViewer": true,
     "DisabledCiphers": {},
     "DisableDefaultBrowserAgent": true,
@@ -56,6 +55,7 @@
     "EnableTrackingProtection": {
       "__COMMENT__TrackingProtection": "You may need to neuturize TPL to prevent downloading allow(white)lists first, e.g. you can look to my overwrite cfg for pointing allow(white)lists to 'unsupported'",
       "Cryptomining": true,
+      "EmailTracking": true,
       "Exceptions": [],
       "Fingerprinting": true,
       "Locked": false,
@@ -99,6 +99,7 @@
         "eki-ee@search.mozilla.org",
         "eudict@search.mozilla.org",
         "faclair-beag@search.mozilla.org",
+        "firefox@tampermonkey.net",
         "flip@search.mozilla.org",
         "formautofill@mozilla.org",
         "freelang@search.mozilla.org",
@@ -165,14 +166,14 @@
     },
     "ExtensionSettings": {
       "__COMMENT__ExtSettings": "Leveled extension control, I'll use this for prevent download matched exts from add-ons catalog",
-      "firefox@tampermonkey.net": {
-        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you to make donations!",
-        "installation_mode": "blocked"
-      },
       "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}": {
         "installation_mode": "blocked"
       },
       "{d61552ef-e2a6-4fb5-bf67-8990f0014957}": {
+        "installation_mode": "blocked"
+      },
+      "firefox@tampermonkey.net": {
+        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you to make donations!",
         "installation_mode": "blocked"
       }
     },
@@ -265,7 +266,7 @@
       "Locked": false
     },
     "Preferences": {
-      "__COMMENT__AboutConfig": "Set any `about:config` prefs with desired status here, beware that original firefox and certain forks disabled this due to stability reasons!",
+      "__COMMENT__AboutConfig": "Set any `about:config` prefs with desired status here, beware that it will disabled this due to stability reasons!",
       "accessibility.force_disabled": {
         "Status": "locked",
         "Value": 1
@@ -305,7 +306,7 @@
     },
     "SearchBar": "separate",
     "SearchEngines": {
-      "__COMMENT__Search": "Add, remove and set default search engine here, note that certain forks possibly doesn't accept add and/or replace search engines!",
+      "__COMMENT__Search": "Add, remove and set default search engine here, note that certain forks possibly doesn't accept add and/or replace search engines due to those forks aren't ESR-based!",
       "Add": [
         {
           "Alias": "@flx",

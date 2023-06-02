@@ -32,7 +32,6 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 
 ### Eligibility of policies configuration
 
-|--------------------------------------------|-------------------|-------------------|-------------------|
 | Browsers / Policy methods                  | ADMX (gpedit.msc) | Policies Registry | JSON Distribution |
 |--------------------------------------------|-------------------|-------------------|-------------------|
 | **Chromium based**                         |                   |                   |                   |
@@ -46,13 +45,13 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | Firefox                                    | :o:               | :o:               | :o:               |
 | Librewolf                                  | :x:               | :o:               | :o:               |
 | Mercury                                    | :x:               | :o:               | :o:               |
+| Pulse                                      | :x:               | :o:               | :o:               |
 | Thunderbird (E-mail client)                | :x:               | :o:               | :o:               |
 | ~~IceCat~~ (Outdated)                      | :x:               | :o:               | :o:               |
 | ~~Iceweasel~~ (Outdated)                   | :x:               | :o:               | :o:               |
 | **Gecko-based** (Pre-servo XUL \/ Goanna ) |                   |                   |                   |
 | Basilisk / Pale Moon                       | :x:               | :x:               | :x:               |
 | Interlink (E-mail client)                  | :x:               | :x:               | :x:               |
-|--------------------------------------------|-------------------|-------------------|-------------------|
 
 \* May include any of forks, e.g. Kinza, Iridium, Iron, Slimjet, Yandex, etc. Also all apps that based on Electron \[e.g. Discord, Telegram, Visual Studio Code\/VSCodium\], Games that use RPGMaker MV\/MZ engine and any newer also affected!
 
@@ -79,7 +78,7 @@ Note:
   - e.g. Install [uBlock Origin](https://github.com/gorhill/uBlock) will be fetch filterlists automatically and cause browser make some requests before you go!
 - `Naver Whale` will become **useless browser** because it will falsely detected as no internet available if you've blocked `Google` DNS IP address both IPv4 and IPv6, this may include blocking `CloudFlare` and `Google` DoH endpoint, too!
 - ~~The final version of Kinza (since 2021/05/10) is based on Chromium 89, and **it's outdated now!** But I'm aware against `sec-ch-ua`, so I resist to use any higher than this if this browser still maintaining...~~
-  > Update that access to Kinza website is now redirected to Dayz instead, seems like this browser are now end of life, farewell.
+  - Update that access to Kinza website is now redirected to Dayz instead, seems like this browser are now end of life, farewell.
 - Any registry or group policy configured to Chrome and/or Chromium-based browsers will be trigger an organisation mode, it will make DoH unconfigurable and I don't know this will cause DoH permanently off or not? Otherwise you can configure manually via regedit or group policy, if your device are not under any real organisations.
 - To surviving against client hints of any post-88 Chrome\/Chromium, you need to put `--disable-features=UserAgentClientHint` within launch argument, I think certain good forks of Chromium that respect privacy enough (e.g. [Iridium](https://iridiumbrowser.de), [Ungoogled Chromium](https://github.com/macchrome/winchrome)) should apply out-of-box by default because detecting and exposing real browser environment data (such as OS, Browser brand, Version, CPU bits, etc.) could be dangerous, even though they trying to claim that it just use for security purpose, but I'll never believe them anyway!
   > Alternatively, use the [uazo's Bromite fork](https://github.com/uazo/bromite-buildtools) that heavily disabled client hints without adding the commands above!

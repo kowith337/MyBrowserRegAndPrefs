@@ -1,9 +1,9 @@
 Windows Registry Editor Version 5.00
 
 ; This is a registry to block "Tampermonkey" to be installed in chromium-based browsers, I do this because of hate that...
-; - Phone-home by default, even though you can disable later on, but set to send data since "out-of-box" should be prohibited!
-; - Show nagging popup for donations, very annoyance if you need to manage or modify scripts, but getting donation message box
-;   before you're trying to do, since then, if I wish to donating to them, I will do it by myself by manually find those donation
+; - Phone-home by default: even though you can disable later on, but set to send data since "out-of-box" should be prohibited!
+; - Show nagging popup for donations: very annoyance if you need to manage or modify scripts, but getting donation message box
+;   before you're trying to do, since then, if I wish to donating to them, I will do it myself by manually find those donation
 ;   links and click for it!!
 ;   * Because of above, don't they think that they will get any donations from me, even just any cents and/or any satangs!!!
 ;
