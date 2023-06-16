@@ -30,10 +30,8 @@ Windows Registry Editor Version 5.00
 ; - Payment handlers (Browser isn't merchant or brokers)
 ; - Protected contents (My plan is allow DRM contents to play, but resist of using identifiers!)
 ; - Protocol handlers (Non-basic URL protocols that open external apps!)
-; - System fonts access
 ; - Unsandboxed plugins
 ; - Virtual Reality (VR)
-; - Window management / placement
 ;
 ; Proportion: try put device offline or block network usage with firewall apps, then allow or reconnect networks once you're set!
 
