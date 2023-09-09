@@ -85,7 +85,7 @@ Windows Registry Editor Version 5.00
 "PaymentMethodQueryEnabled"=dword:00000000; Don't query payment methods!
 "PrivacySandboxAdMeasurementEnabled"=dword:00000000; Disable shitty ads sandbox measurements as policy level!
 "PrivacySandboxAdTopicsEnabled"=dword:00000000; Disable shitty ads sandbox topics as policy level!
-"PrivacySandboxPromptEnabled"=dword:00000001; Always prompt for PrivacySandboxTrial, this must be disabled in other Chromium-based and set other values to disable!
+"PrivacySandboxPromptEnabled"=dword:00000000; Disable prompting to enable its shitty sandbox trial, OFF is mean "OFF", period!
 "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000; Disable shitty ads to zuckest websites with new ads sandbox as policy level!
 "PromotionalTabsEnabled"=dword:00000000
 "PromptForDownloadLocation"=dword:00000001

@@ -38,6 +38,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000
@@ -61,7 +62,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002 ; Disable tab preloading!
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
-  "PrivacySandboxPromptEnabled"=dword:00000001; Only Chrome will be left this enabled to ensure that you've prompted before opt-in even other related settings key disabled all of them, just in case.
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000 ; STOP QUIC!
@@ -87,6 +88,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000
@@ -110,6 +112,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000
@@ -135,6 +138,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000
