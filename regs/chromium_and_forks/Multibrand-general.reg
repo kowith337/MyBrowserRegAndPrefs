@@ -15,6 +15,7 @@ Windows Registry Editor Version 5.00
   "NetworkPredictionOptions"=dword:00000002
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
+  "PrivacySandboxPromptEnabled"=dword:00000000
   "PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
   "PromotionalTabsEnabled"=dword:00000000
   "QuicAllowed"=dword:00000000
