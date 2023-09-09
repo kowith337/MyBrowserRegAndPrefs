@@ -83,6 +83,10 @@ Windows Registry Editor Version 5.00
 "NetworkPredictionOptions"=dword:00000002; Disable any predictions (make blocker extensions effectively usable)
 "PasswordManagerAllowShowPasswords"=dword:00000000
 "PaymentMethodQueryEnabled"=dword:00000000; Don't query payment methods!
+"PrivacySandboxAdMeasurementEnabled"=dword:00000000; Disable shitty ads sandbox measurements as policy level!
+"PrivacySandboxAdTopicsEnabled"=dword:00000000; Disable shitty ads sandbox topics as policy level!
+"PrivacySandboxPromptEnabled"=dword:00000001; Always prompt for PrivacySandboxTrial, this must be disabled in other Chromium-based and set other values to disable!
+"PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000; Disable shitty ads to zuckest websites with new ads sandbox as policy level!
 "PromotionalTabsEnabled"=dword:00000000
 "PromptForDownloadLocation"=dword:00000001
 "QuicAllowed"=dword:00000000; Disable QUIC (Certain GOOLAG sites and services use this to bypass ads, e.g. YouTube is a good example of it!)

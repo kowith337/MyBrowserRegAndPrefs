@@ -84,6 +84,9 @@ Windows Registry Editor Version 5.00
 "NTPMiddleSlotAnnouncementVisible"=dword:00000000
 "PasswordManagerAllowShowPasswords"=dword:00000000
 "PaymentMethodQueryEnabled"=dword:00000000
+"PrivacySandboxAdMeasurementEnabled"=dword:00000000
+"PrivacySandboxAdTopicsEnabled"=dword:00000000
+"PrivacySandboxSiteEnabledAdsEnabled"=dword:00000000
 "PromotionalTabsEnabled"=dword:00000000
 "PromptForDownloadLocation"=dword:00000001
 "QuicAllowed"=dword:00000000
