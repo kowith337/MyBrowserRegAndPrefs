@@ -56,7 +56,7 @@ Windows Registry Editor Version 5.00
   "DefaultBrowserSettingEnabled"=dword:00000000 ; Resist to set default browser, since I'm run all of them as semi-portable!
   "DNSInterceptionChecksEnabled"=dword:00000000 ; This will disable interception check that flushing any apps that able to logging DNS requests with random NXDOMAIN (I'm often use with Invizible and pDNSF)
   "DnsOverHttpsMode"="off" ; Turn off DoH
-  "DnsOverHttpsTemplates"=- ; Remove DoH endpoint, if it have any in registry!
+  "DnsOverHttpsTemplates"="https://dns.9oo91e.qjz9zk/dns-query?{dns}"; Only Chrome should be fake its default value!
   "HideWebStoreIcon"=dword:00000001
   "HideWebStorePromo"=dword:00000001
   "MediaRecommendationsEnabled"=dword:00000000
@@ -124,7 +124,7 @@ Windows Registry Editor Version 5.00
   "WPADQuickCheckEnabled"=dword:00000000
 ; Their will connect to Goolag DNS by default if you didn't disabled any DNS related key on Whale.
 ; By other mean is if you've blocked Goolag DNS, this browser will think that you're offline and will become useless!
-; What a poor fork and coding, it's pity to see other browsers and applications can connect to internet except this one...
+; What a poor fork and coding, it's pity to see other browsers and applications can connect to internet without connecting to Goolag DNS first, except this one...
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
   "AdvancedProtectionAllowed"=dword:00000000
