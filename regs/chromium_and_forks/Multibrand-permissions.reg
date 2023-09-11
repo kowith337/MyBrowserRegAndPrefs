@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
 ;; Few explainations
-;
+;;
 ;; "DefaultClipboardSetting"             > Clipboard (Only websites, not browser itself that show "something that you copied!" under address bar!)
 ;; "DefaultFileHandlingGuardSetting"     > File handling (read/write access)
 ;; "DefaultFileSystemReadGuardSetting"   > File system read
@@ -19,21 +19,21 @@ Windows Registry Editor Version 5.00
 ;; "DefaultWebUsbGuardSetting"           > Devices that connected via USB (Doubt) [In case if you use FIDO USB]
 ;; "DefaultWindowManagementSetting"      > Your browser or screen width/height, and/or fullscreen state (Chrome 111+)
 ;; "DefaultWindowPlacementSetting"       > Your browser or screen width/height, and/or fullscreen state (Chrome 100~111)
-;
-; If they will have more policies to control default state of these below, I will update this default registry policy.
-; But from now on, you may need to config them manually after first launch...
-; - Augmented reality (AR)
-; - Background Sync
-; - Clipboard (as browser-wide)
-; - Device use (User Presence / AFK or Idle detect)
-; - MIDI (Rhythm devices / tools)
-; - Payment handlers (Browser isn't merchant or brokers)
-; - Protected contents (My plan is allow DRM contents to play, but resist of using identifiers!)
-; - Protocol handlers (Non-basic URL protocols that open external apps!)
-; - Unsandboxed plugins
-; - Virtual Reality (VR)
-;
-; Proportion: try put device offline or block network usage with firewall apps, then allow or reconnect networks once you're set!
+;;
+;; If they will have more policies to control default state of these below, I will update this default registry policy.
+;; But from now on, you may need to config them manually after first launch...
+;; - Augmented reality (AR)
+;; - Background Sync
+;; - Clipboard (as browser-wide)
+;; - Device use (User Presence / AFK or Idle detect)
+;; - MIDI (Rhythm devices / tools)
+;; - Payment handlers (Browser isn't merchant or brokers)
+;; - Protected contents (My plan is allow DRM contents to play, but resist of using identifiers!)
+;; - Protocol handlers (Non-basic URL protocols that open external apps!)
+;; - Unsandboxed plugins
+;; - Virtual Reality (VR)
+;;
+;; Proportion: try put device offline or block network usage with firewall apps, then allow or reconnect networks once you're set!
 
 [HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
   "DefaultClipboardSetting"=dword:00000002

@@ -13,6 +13,7 @@ Windows Registry Editor Version 5.00
   "IPFSEnabled"=dword:00000000 ; Don't enable Brave IPFS
   "MediaRecommendationsEnabled"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002
+  "PasswordManagerEnabled"=dword:00000000
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
   "PrivacySandboxPromptEnabled"=dword:00000000
@@ -61,6 +62,7 @@ Windows Registry Editor Version 5.00
   "HideWebStorePromo"=dword:00000001
   "MediaRecommendationsEnabled"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002 ; Disable tab preloading!
+  "PasswordManagerEnabled"=dword:00000000; Force disable password manager to Chrome and shady browsers (Include Brave, Edge and Whale), use offline passwords manager and separate from browser (not extensions and nor plugins) is highly recommended!
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
   "PrivacySandboxPromptEnabled"=dword:00000000
@@ -87,6 +89,7 @@ Windows Registry Editor Version 5.00
   "HideWebStorePromo"=dword:00000001
   "MediaRecommendationsEnabled"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002
+  "PasswordManagerEnabled"=dword:00000000
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
   "PrivacySandboxPromptEnabled"=dword:00000000
@@ -111,6 +114,7 @@ Windows Registry Editor Version 5.00
   "HideWebStorePromo"=dword:00000001
   "MediaRecommendationsEnabled"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002
+  "PasswordManagerEnabled"=dword:00000000
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
   "PrivacySandboxPromptEnabled"=dword:00000000
