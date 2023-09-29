@@ -139,7 +139,7 @@ Windows Registry Editor Version 5.00
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
   "HomepageIsNewTabPage"=dword:00000000
-  "HomepageLocation"=-
+  "HomepageLocation"="about:blank"
   "ImportBookmarks"=dword:00000000
   "ImportHistory"=dword:00000000
   "ImportSearchEngine"=dword:00000000

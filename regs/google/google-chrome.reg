@@ -138,7 +138,7 @@ Windows Registry Editor Version 5.00
   "BlockThirdPartyCookies"=dword:00000001; This will override default to block 3p all the time instead of only in incog, you can step down to incog in settings if you needed, remember that I won't recommend to do!
   "DefaultNotificationsSetting"=dword:00000002; Do I need to say this?
   "HomepageIsNewTabPage"=dword:00000000; Homepage != NTP
-  "HomepageLocation"=dword:00000000
+  "HomepageLocation"="about:blank"
   "ImportBookmarks"=dword:00000000; Do not import bookmarks across browsers from start!
   "ImportHistory"=dword:00000000; Do not import history across browsers from start!
   "ImportSearchEngine"=dword:00000000; Do not import SE across browsers from start!

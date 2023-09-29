@@ -68,7 +68,6 @@ Windows Registry Editor Version 5.00
   "HideWebStorePromo"=dword:00000001
   "HistoryClustersVisible"=dword:00000000
   "ImportAutofillFormData"=dword:00000000
-  "ImportHistory"=dword:00000000
   "ImportSavedPasswords"=dword:00000000
   "InsecureFormsWarningsEnabled"=dword:00000001
   "InstantEnabled"=dword:00000000
@@ -136,7 +135,7 @@ Windows Registry Editor Version 5.00
   "BlockThirdPartyCookies"=dword:00000001
   "DefaultNotificationsSetting"=dword:00000002
   "HomepageIsNewTabPage"=dword:00000000
-  "HomepageLocation"=-
+  "HomepageLocation"="about:blank"
   "ImportBookmarks"=dword:00000000
   "ImportHistory"=dword:00000000
   "ImportSearchEngine"=dword:00000000

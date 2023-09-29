@@ -126,9 +126,9 @@ Windows Registry Editor Version 5.00
   "SignedHTTPExchangeEnabled"=dword:00000000
   "SSLVersionMin"="tls1.2"
   "WPADQuickCheckEnabled"=dword:00000000
-; Their will connect to Goolag DNS by default if you didn't disabled any DNS related key on Whale.
-; By other mean is if you've blocked Goolag DNS, this browser will think that you're offline and will become useless!
-; What a poor fork and coding, it's pity to see other browsers and applications can connect to internet without connecting to Goolag DNS first, except this one...
+;; Their will connect to Goolag DNS by default if you didn't disabled any DNS related key on Whale.
+;; By other mean is if you've blocked Goolag DNS, this browser will think that you're offline and will become useless!
+;; What a poor fork and coding, it's pity to see other browsers and applications can connect to internet without connecting to Goolag DNS first, except this one...
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
   "AdvancedProtectionAllowed"=dword:00000000

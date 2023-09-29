@@ -1,5 +1,26 @@
 Windows Registry Editor Version 5.00
 
+;; Recommend additional settings
+;; - Untick "Lazy load restored tabs"
+;; - Preferred date and time is "Same as selected language"
+;;   - Also, set to have only these language below.
+;;     - en-US
+;;     - en
+;; - Untick "Vivaldia" game in start page settings.
+;; - Untick anything about "Allow search suggestions" in search settings.
+;; - Untick these in privacy settings.
+;;   - Untick all of "Google services"
+;;   - Untick "Hangouts" in Google extensions.
+;;   - Untick anything about "Suggestions" in search.
+;;   - Untick all of "AutoFill"
+;;   - Block hyperlink auditing should be ticked in "Tracking prevention"
+;; - Always spoof as Chrome brand in Network settings
+;;
+;; For ads and tracker blocking...
+;; - If you're uBO main, you can turn Vivaldi protection to Off!
+;; - If you don't want to install any blocker extensions, expand blocklist by press "Manage sourcee", then untick "Allow ads from our partners"
+;;   - Then add your own additional blocklists, if needed.
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Vivaldi]
   "AbusiveExperienceInterventionEnforce"=dword:00000001
   "AccessibilityImageLabelsEnabled"=dword:00000000
@@ -42,8 +63,9 @@ Windows Registry Editor Version 5.00
   "DefaultKeygenSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
+  "DefaultNotificationsSetting"=-
   "DefaultPluginsSetting"=dword:00000002
-  "DefaultPopupsSetting"=dword:00000002
+  "DefaultPopupsSetting"=-
   "DefaultSearchProviderContextMenuAccessAllowed"=dword:00000000
   "DefaultSensorsSetting"=dword:00000002
   "DefaultSerialGuardSetting"=dword:00000002
@@ -55,7 +77,7 @@ Windows Registry Editor Version 5.00
   "DisableSSLRecordSplitting"=dword:00000000
   "DisableSpdy"=dword:00000001
   "DnsOverHttpsMode"="off"
-  "DnsOverHttpsTemplates"="https://dns.9oo91e.qjz9zk/dns-query?{dns}"
+  "DnsOverHttpsTemplates"=-
   "DnsPrefetchingEnabled"=dword:00000000
   "EnableDeprecatedWebPlatformFeatures"=dword:00000000
   "EnableMediaRouter"=dword:00000000
@@ -68,7 +90,7 @@ Windows Registry Editor Version 5.00
   "HideWebStorePromo"=dword:00000001
   "HistoryClustersVisible"=dword:00000000
   "ImportAutofillFormData"=dword:00000000
-  "ImportHistory"=dword:00000000
+  "ImportHistory"=-
   "ImportSavedPasswords"=dword:00000000
   "InsecureFormsWarningsEnabled"=dword:00000001
   "InstantEnabled"=dword:00000000
@@ -83,7 +105,7 @@ Windows Registry Editor Version 5.00
   "NativeMessagingUserLevelHosts"=dword:00000000
   "NetworkPredictionOptions"=dword:00000002
   "PasswordManagerAllowShowPasswords"=dword:00000000
-  "PasswordManagerEnabled"=dword:00000000
+  "PasswordManagerEnabled"=-
   "PaymentMethodQueryEnabled"=dword:00000000
   "PrivacySandboxAdMeasurementEnabled"=dword:00000000
   "PrivacySandboxAdTopicsEnabled"=dword:00000000
@@ -103,17 +125,17 @@ Windows Registry Editor Version 5.00
   "SSLVersionMin"="tls1.2"
   "SafeBrowsingExtendedReportingEnabled"=dword:00000000
   "SafeBrowsingExtendedReportingOptInAllowed"=dword:00000000
-  "SearchSuggestEnabled"=dword:00000000
+  "SearchSuggestEnabled"=-
   "SharedClipboardEnabled"=dword:00000000
   "ShowFullUrlsInAddressBar"=dword:00000001
   "SignedHTTPExchangeEnabled"=dword:00000000
-  "SigninAllowed"=dword:00000000
-  "SigninInterceptionEnabled"=dword:00000000
+  "SigninAllowed"=-; Allowed for Vivaldi
+  "SigninInterceptionEnabled"=dword:00000000; Allow sign-in but disallow interceptions, like Chrome.
   "SitePerProcess"=dword:00000001
   "SkipMetadataCheck"=dword:00000001
   "SpellCheckServiceEnabled"=dword:00000000
   "SuppressDifferentOriginSubframeDialogs"=dword:00000001
-  "SyncDisabled"=dword:00000001
+  "SyncDisabled"=-; This are allowed due to Vivaldi always force users to create encrypted passwords.
   "TabUnderAllowed"=dword:00000000
   "TaskManagerEndProcessEnabled"=dword:00000001
   "UrlKeyedAnonymizedDataCollectionEnabled"=dword:00000000
@@ -135,17 +157,17 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Vivaldi\Recommended]
   "BackgroundModeEnabled"=dword:00000000
-  "BlockThirdPartyCookies"=dword:00000001
+  "BlockThirdPartyCookies"=dword:00000001; Vivaldi seems set 3P block by default, but added this to ensure it keep this default for OOB.
   "DefaultNotificationsSetting"=dword:00000002
   "DefaultPopupsSetting"=dword:00000002
   "HomepageIsNewTabPage"=dword:00000000
-  "HomepageLocation"=-
+  "HomepageLocation"="chrome://settings/searchEngines"; Don't know why I cannot perform to quick search if I didn't go to Chrome search settings page first.
   "ImportBookmarks"=dword:00000000
   "ImportHistory"=dword:00000000
   "ImportSearchEngine"=dword:00000000
   "PasswordLeakDetectionEnabled"=dword:00000000
   "PasswordManagerEnabled"=dword:00000000
-  "SafeBrowsingProtectionLevel"=dword:00000000
+  "SafeBrowsingProtectionLevel"=dword:00000000; This does lower the protection but increase privacy since relying to Google SB is mean they probably read all URLs while browsing!
   "SearchSuggestEnabled"=dword:00000000
   "ShowHomeButton"=dword:00000001
   "TranslateEnabled"=dword:00000000
@@ -155,6 +177,7 @@ Windows Registry Editor Version 5.00
   "2"="passwords"
   "3"="typedUrls"
   "4"="wifiConfigurations"
+;; Even though Vivaldi are another Chromium forks that can be trusted, but I'll still holding my though that sensitive data shouldn't be synced over.
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Vivaldi\URLBlocklist]
   "1"="mms:*"

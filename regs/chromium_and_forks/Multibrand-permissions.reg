@@ -23,6 +23,9 @@ Windows Registry Editor Version 5.00
 ;; If they will have more policies to control default state of these below, I will update this default registry policy.
 ;; But from now on, you may need to config them manually after first launch...
 ;; - Augmented reality (AR)
+;; - Auto-verify
+;;   * Faster bypassing bot check for some sites (where they use CrapFlare TurnSite, Goolag reCaptcha, etc.), but I don't know
+;;     how many of sensitive data it will sent just for making those kind of verifyication easier!?
 ;; - Background Sync
 ;; - Clipboard (as browser-wide)
 ;; - Device use (User Presence / AFK or Idle detect)
@@ -30,6 +33,9 @@ Windows Registry Editor Version 5.00
 ;; - Payment handlers (Browser isn't merchant or brokers)
 ;; - Protected contents (My plan is allow DRM contents to play, but resist of using identifiers!)
 ;; - Protocol handlers (Non-basic URL protocols that open external apps!)
+;; - Third party sign-in (Stop linking accounts to many sites and services, create your accounts on those sites like newcomers!)
+;;   * If they doesn't offer to login with plain user/e-mail and have only Goolag, Zuckbook, etc. Then it's their fault that
+;;     intentionally rely to it (and later then they'll share SNS data to shady ads providers, ofc!), not me!
 ;; - Unsandboxed plugins
 ;; - Virtual Reality (VR)
 ;;
@@ -54,7 +60,7 @@ Windows Registry Editor Version 5.00
   "DefaultWindowManagementSetting"=dword:00000002
   "DefaultWindowPlacementSetting"=dword:00000002
 
-[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+[HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
   "DefaultClipboardSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
@@ -68,12 +74,12 @@ Windows Registry Editor Version 5.00
   "DefaultSensorsSetting"=dword:00000002
   "DefaultSerialGuardSetting"=dword:00000002
   "DefaultWebBluetoothGuardSetting"=dword:00000002
-  "DefaultWebHidGuardSetting"=dword:00000002
+  "DefaultWebHidGuardSetting"=-; Somehow it should be excluded for Chromium because it may use on other things, e.g. games that based on Chrome WebGL (RPGMV/MZ, TyranoScript, etc.)
   "DefaultWebUsbGuardSetting"=dword:00000002
   "DefaultWindowManagementSetting"=dword:00000002
   "DefaultWindowPlacementSetting"=dword:00000002
 
-[HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
   "DefaultClipboardSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
