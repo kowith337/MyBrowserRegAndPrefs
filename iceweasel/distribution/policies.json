@@ -12,7 +12,7 @@
       "ImportEnterpriseRoots": false
     },
     "Cookies": {
-      "__COMMENT__Cookies": "Block 3p is recommended for privacy focus (and also make it like temporary browser), you can config browser later if you don't want to remove cookies after exit!",
+      "__COMMENT__Cookies": "Block 3p (and no 'from visit' exceptions) is recommended for privacy focus (and also make it like temporary browser), you can config browser later if you don't want to remove all cookies after exit!",
       "AcceptThirdParty": "never",
       "Allow": [],
       "AllowSession": [],
@@ -48,7 +48,7 @@
       "__COMMENT__DoH": "Most Firefox default turn on DoH and use CrapFlare-backed from the beginning, this should turn off from start for prevent leaked to unwanted domains, you can turn off permanently if you have another protections, e.g. DNSCrypt, pDNSF.",
       "Enabled": false,
       "ExcludedDomains": [],
-      "Locked": true,
+      "Locked": false,
       "ProviderURL": ""
     },
     "DontCheckDefaultBrowser": true,
@@ -173,7 +173,7 @@
         "installation_mode": "blocked"
       },
       "firefox@tampermonkey.net": {
-        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you to make donations!",
+        "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you for make donations to extension owner!",
         "installation_mode": "blocked"
       }
     },
@@ -224,7 +224,7 @@
       "EnablePermissions": false
     },
     "Permissions": {
-      "__COMMENT__Permissions": "Control default browser permissions, some will permanenly locked because of useless!",
+      "__COMMENT__Permissions": "Control default browser permissions, interact with hardware will permanenly locked because of useless, as well as location and notifications too!",
       "Autoplay": {
         "Allow": [],
         "Block": [],
@@ -280,12 +280,12 @@
     "PromptForDownloadLocation": true,
     "Proxy": {
       "__COMMENT__Proxy": "If you want to use certain connections from the beginning, setup here!",
-      "AutoConfigURL": "",
+      "AutoConfigURL": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/pac-done.js",
       "AutoLogin": false,
       "FTPProxy": "",
       "HTTPProxy": "",
       "Locked": false,
-      "Mode": "system",
+      "Mode": "none",
       "Passthrough": "<local>",
       "SOCKSProxy": "127.0.0.1:9050",
       "SOCKSVersion": 5,
