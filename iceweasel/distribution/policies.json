@@ -224,7 +224,7 @@
       "EnablePermissions": false
     },
     "Permissions": {
-      "__COMMENT__Permissions": "Control default browser permissions, interact with hardware will permanenly locked because of useless, as well as location and notifications too!",
+      "__COMMENT__Permissions": "Control default browser permissions, interact with hardware will permanenly locked because of useless and privacy breaker, as well as location and notifications too!",
       "Autoplay": {
         "Allow": [],
         "Block": [],
@@ -308,14 +308,6 @@
     "SearchEngines": {
       "__COMMENT__Search": "Add, remove and set default search engine here, note that certain forks possibly doesn't accept add and/or replace search engines due to those forks aren't ESR-based!",
       "Add": [
-        {
-          "Alias": "@f4g",
-          "Description": "Use Farside to redirect to a working instance of 4get",
-          "IconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEzSURBVFhH7ZVNCsIwEIWjoG5ceR4P4CkEwY0nEkEQ7EbwAh7A87hyoy6UaTNhjJMmkybWgh8MjYJ9b/5i73gonqpF+vrZGn8DHwYWy1UZ36IcQpfgbrvWp3yYLajL2mVkfzrrk1Lz2VSfZLy1YHi7ssFBxZtgDFChy6MKxK4OJ+4zhLNlvyv7FnCi1IwxcB+N9UmpyaAKDknpUdhuKa22twJgLHQbqDkqDthtBeC9xgB8ADE7qLh08GimLkR/RiEGcB2hAnUGNkVRPoOHUJo9VpSDfh9kQCqO0LYitilvC2LEuVsRhxKgc1VrIDZzybXMtgCEY8UByW+Dh1BKaBLZDITCGoAeYuQm+RZITXtbkLsaja/ipsZ+cwhd2NmmaEu3KgBg1qmGMqoCqcSB7rUgLUq9ACMXpxeWSouRAAAAAElFTkSuQmCC",
-          "Method": "GET",
-          "Name": "Farside 4get",
-          "URLTemplate": "https://farside.link/4get/web?s={searchTerms}"
-        },
         {
           "Alias": "@flx",
           "Description": "Use Farside to redirect to a working instance of LibreX",
