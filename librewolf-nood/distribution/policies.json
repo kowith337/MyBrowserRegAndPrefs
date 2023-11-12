@@ -1,0 +1,55 @@
+{
+    "__COMMENT__ More Information": "https://github.com/mozilla/policy-templates/blob/master/README.md",
+    "policies": {
+        "AppUpdateURL": "https://localhost",
+        "DisableAppUpdate": true,
+        "OverrideFirstRunPage": "",
+        "OverridePostUpdatePage": "",
+        "DisableSystemAddonUpdate": true,
+        "DisableProfileImport": false,
+        "DisableFirefoxStudies": true,
+        "DisableTelemetry": true,
+        "DisableFeedbackCommands": true,
+        "DisablePocket": true,
+        "DisableSetDesktopBackground": true,
+        "DisableDeveloperTools": false,
+        "DNSOverHTTPS": {
+            "Enabled": false,
+            "ProviderURL": "",
+            "Locked": false
+        },
+        "NoDefaultBookmarks": true,
+        "WebsiteFilter": {
+            "Block": [],
+            "Exceptions": []
+        },
+        "Extensions": {
+            "Install": [],
+            "Uninstall": [
+                "amazondotcom@search.mozilla.org",
+                "bing@search.mozilla.org",
+                "ebay@search.mozilla.org",
+                "extension@tabliss.io.xpi",
+                "formautofill@mozilla.org",
+                "google@search.mozilla.org",
+                "proxy-failover@mozilla.com",
+                "twitter@search.mozilla.org"
+                "webcompat-reporter@mozilla.org",
+                "webcompat@mozilla.org",
+                "wikipedia@search.mozilla.org"
+                ]
+        },
+        "SearchEngines": {
+            "PreventInstalls": false,
+            "Remove": [
+                "Google",
+                "Bing",
+                "Amazon.com",
+                "eBay",
+                "Twitter"
+            ],
+            "Default": "DuckDuckGo",
+            "Add": []
+        },
+    }
+}
