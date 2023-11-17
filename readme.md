@@ -43,6 +43,7 @@ Go delete system addons in `/browser/features/*.xpi`, it's not needed unless...
 | Opera Chromium (also GX)                   | :x:               | :x:               | :x:               |
 | **Gecko-based** (Post Gecko \/ Servo)      |                   |                   |                   |
 | Firefox                                    | :o:               | :o:               | :o:               |
+| Floorp                                     | :x:               | :o:               | :o:               |
 | Librewolf                                  | :x:               | :o:               | :o:               |
 | Mercury                                    | :x:               | :o:               | :o:               |
 | Pulse                                      | :x:               | :o:               | :o:               |
