@@ -3,26 +3,21 @@
     "policies": {
         "AppUpdateURL": "https://localhost",
         "DisableAppUpdate": true,
-        "OverrideFirstRunPage": "",
-        "OverridePostUpdatePage": "",
-        "DisableSystemAddonUpdate": true,
-        "DisableProfileImport": false,
-        "DisableFirefoxStudies": true,
-        "DisableTelemetry": true,
-        "DisableFeedbackCommands": true,
-        "DisablePocket": true,
-        "DisableSetDesktopBackground": true,
         "DisableDeveloperTools": false,
+        "DisableFeedbackCommands": true,
+        "DisableFirefoxStudies": true,
+        "DisablePocket": true,
+        "DisableProfileImport": false,
+        "DisableSetDesktopBackground": true,
+        "DisableSystemAddonUpdate": true,
+        "DisableTelemetry": true,
         "DNSOverHTTPS": {
             "Enabled": false,
-            "ProviderURL": "",
-            "Locked": false
+            "ExcludedDomains": [],
+            "Locked": false,
+            "ProviderURL": ""
         },
-        "NoDefaultBookmarks": true,
-        "WebsiteFilter": {
-            "Block": [],
-            "Exceptions": []
-        },
+        "DontCheckDefaultBrowser": true,
         "Extensions": {
             "Install": [],
             "Uninstall": [
@@ -33,23 +28,43 @@
                 "formautofill@mozilla.org",
                 "google@search.mozilla.org",
                 "proxy-failover@mozilla.com",
-                "twitter@search.mozilla.org"
+                "twitter@search.mozilla.org",
                 "webcompat-reporter@mozilla.org",
                 "webcompat@mozilla.org",
                 "wikipedia@search.mozilla.org"
-                ]
+            ]
         },
+        "ExtensionSettings": {
+            "firefox@tampermonkey.net": {
+                "blocked_install_message": "This extension is an untrusted userscript manager that set to phone home out-of-box by default and often show nagging popup in its extension that begging you for make donations to extension owner!",
+                "installation_mode": "blocked"
+            },
+            "{7c3a8b88-4dc9-4487-b7f9-736b5f38b957}": {
+                "installation_mode": "blocked"
+            },
+            "{d61552ef-e2a6-4fb5-bf67-8990f0014957}": {
+                "installation_mode": "blocked"
+            }
+        },
+        "NoDefaultBookmarks": true,
+        "OverrideFirstRunPage": "",
+        "OverridePostUpdatePage": "",
         "SearchEngines": {
+            "Add": [],
+            "Default": "SearXNG",
             "PreventInstalls": false,
             "Remove": [
-                "Google",
-                "Bing",
                 "Amazon.com",
-                "eBay",
-                "Twitter"
-            ],
-            "Default": "DuckDuckGo",
-            "Add": []
+                "Bing",
+                "DuckDuckGo",
+                "Google",
+                "Twitter",
+                "eBay"
+            ]
         },
+        "WebsiteFilter": {
+            "Block": [],
+            "Exceptions": []
+        }
     }
 }
