@@ -2,23 +2,25 @@ Windows Registry Editor Version 5.00
 
 ;; Few explainations
 ;;
-;; "DefaultClipboardSetting"             > Clipboard (Only websites, not browser itself that show "something that you copied!" under address bar!)
-;; "DefaultFileHandlingGuardSetting"     > File handling (read/write access)
-;; "DefaultFileSystemReadGuardSetting"   > File system read
-;; "DefaultFileSystemWriteGuardSetting"  > File system write
-;; "DefaultGeolocationSetting"           > Geolocation (DANGEROUS!) [DETECT REAL LOCATION OF YOU!!]
-;; "DefaultJavaScriptJitSetting"         > Just In Time Javascripts
-;; "DefaultLocalFontsSetting"            > Read installed fonts in your system (DANGEROUS nowadays due to fingerprintable)
-;; "DefaultMediaStreamSetting"           > Media capture devices, e.g. webcam, microphone, etc. (deprecated?)
-;; "DefaultNotificationsSetting"         > Web notifications (USELESS!) [THIS FEATURE ARE USE AS ADS SPAM NOWADAYS!!]
-;; "DefaultPopupsSetting"                > Pop-up windows (Often use by ads)
-;; "DefaultSensorsSetting"               > Device Sensors (USELESS FOR PC!) [DETECT ROTATIONS AND GYRO FOR MOVABLE DEVICES!!]
-;; "DefaultSerialGuardSetting"           > Serial Ports (USELESS FOR NOTEBOOK AND LATE 201X+ NEWER PC!)
-;; "DefaultWebBluetoothGuardSetting"     > Bluetooth (DANGEROUS!) [POTENTIALLY CONNECT TO DEVICES EVEN IT DIDN'T YET PAIRED!!]
-;; "DefaultWebHidGuardSetting"           > Input devices, e.g. Joystick (Doubt) [In case if you play web games or RPGMV~MZ]
-;; "DefaultWebUsbGuardSetting"           > Devices that connected via USB (Doubt) [In case if you use FIDO USB]
-;; "DefaultWindowManagementSetting"      > Your browser or screen width/height, and/or fullscreen state (Chrome 111+)
-;; "DefaultWindowPlacementSetting"       > Your browser or screen width/height, and/or fullscreen state (Chrome 100~111)
+;; "DefaultClipboardSetting"                         > Clipboard (Only websites, not browser itself that show "something that you copied!" under address bar!)
+;; "DefaultDirectSocketsPrivateNetworkAccessSetting" > Private network access that probably use SOCKS?
+;; "DefaultFileHandlingGuardSetting"                 > File handling (read/write access)
+;; "DefaultFileSystemReadGuardSetting"               > File system read
+;; "DefaultFileSystemWriteGuardSetting"              > File system write
+;; "DefaultGeolocationSetting"                       > Geolocation (DANGEROUS!) [DETECT REAL LOCATION OF YOU!!]
+;; "DefaultJavaScriptJitSetting"                     > Just In Time Javascripts
+;; "DefaultJavaScriptOptimizerSetting"               > Javascript V8 optimisation
+;; "DefaultLocalFontsSetting"                        > Read installed fonts in your system (DANGEROUS nowadays due to fingerprintable)
+;; "DefaultMediaStreamSetting"                       > Media capture devices, e.g. webcam, microphone, etc. (deprecated?)
+;; "DefaultNotificationsSetting"                     > Web notifications (USELESS!) [THIS FEATURE ARE USE AS ADS SPAM NOWADAYS!!]
+;; "DefaultPopupsSetting"                            > Pop-up windows (Often use by ads)
+;; "DefaultSensorsSetting"                           > Device Sensors (USELESS FOR PC!) [DETECT ROTATIONS AND GYRO FOR MOVABLE DEVICES!!]
+;; "DefaultSerialGuardSetting"                       > Serial Ports (USELESS FOR NOTEBOOK AND/OR LATE 201X+ NEWER PC!)
+;; "DefaultWebBluetoothGuardSetting"                 > Bluetooth (DANGEROUS!) [POTENTIALLY CONNECT TO DEVICES EVEN IT DIDN'T YET PAIRED!!]
+;; "DefaultWebHidGuardSetting"                       > Input devices, e.g. Joystick (Doubt) [In case if you play web games or RPGMV~MZ]
+;; "DefaultWebUsbGuardSetting"                       > Devices that connected via USB (Doubt) [In case if you use FIDO USB]
+;; "DefaultWindowManagementSetting"                  > Your browser or screen width/height, and/or fullscreen state (Chrome 111+)
+;; "DefaultWindowPlacementSetting"                   > Your browser or screen width/height, and/or fullscreen state (Chrome 100~111)
 ;;
 ;; If they will have more policies to control default state of these below, I will update this default registry policy.
 ;; But from now on, you may need to config them manually after first launch...
@@ -43,11 +45,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
@@ -62,11 +66,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Chromium]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
@@ -81,11 +87,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
@@ -100,11 +108,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
@@ -119,11 +129,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Naver\Naver Whale]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
@@ -138,11 +150,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
   "DefaultClipboardSetting"=dword:00000002
+  "DefaultDirectSocketsPrivateNetworkAccessSetting"=dword:00000002
   "DefaultFileHandlingGuardSetting"=dword:00000002
   "DefaultFileSystemReadGuardSetting"=dword:00000002
   "DefaultFileSystemWriteGuardSetting"=dword:00000002
   "DefaultGeolocationSetting"=dword:00000002
   "DefaultJavaScriptJitSetting"=dword:00000002
+  "DefaultJavaScriptOptimizerSetting"=dword:00000002
   "DefaultLocalFontsSetting"=dword:00000002
   "DefaultMediaStreamSetting"=dword:00000002
   "DefaultNotificationsSetting"=dword:00000002
